@@ -7,9 +7,7 @@
 
 import Foundation
 
-public class FCNetwork {
 
-    func get() {
-    }
-
+public func get() -> String {
+    return "get"
 }

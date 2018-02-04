@@ -5,7 +5,7 @@
 //  Created by Francisco Javier Chacon de Dios on 04/02/18.
 //
 
-@import Foundation
+@import Foundation;
 
 FOUNDATION_EXPORT double FCNetworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char FCNetworkVersionString[];
