@@ -7,44 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC65B01C2027BBCD001FD4EB /* FCNetwork_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC65B0122027BBCC001FD4EB /* FCNetwork_iOS.framework */; };
-		AC65B0212027BBCD001FD4EB /* FCNetwork_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0202027BBCD001FD4EB /* FCNetwork_iOSTests.swift */; };
-		AC65B0232027BBCD001FD4EB /* FCNetwork_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* FCNetwork_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC65B0382027BC11001FD4EB /* FCNetwork_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC65B02F2027BC11001FD4EB /* FCNetwork_macOS.framework */; };
-		AC65B03D2027BC11001FD4EB /* FCNetwork_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B03C2027BC11001FD4EB /* FCNetwork_macOSTests.swift */; };
-		AC65B03F2027BC11001FD4EB /* FCNetwork_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0312027BC11001FD4EB /* FCNetwork_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC65B0232027BBCD001FD4EB /* FCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* FCNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC65B0472027C02C001FD4EB /* FCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* FCNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC65B04B2027C51F001FD4EB /* FCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* FCNetwork.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AC65B01D2027BBCD001FD4EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC65B0072027B8DC001FD4EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC65B0112027BBCC001FD4EB;
-			remoteInfo = "FCNetwork iOS";
-		};
-		AC65B0392027BC11001FD4EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC65B0072027B8DC001FD4EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC65B02E2027BC11001FD4EB;
-			remoteInfo = "FCNetwork macOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		AC65B0122027BBCC001FD4EB /* FCNetwork_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCNetwork_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC65B0152027BBCC001FD4EB /* FCNetwork_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCNetwork_iOS.h; sourceTree = "<group>"; };
-		AC65B0162027BBCC001FD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC65B01B2027BBCD001FD4EB /* FCNetwork iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCNetwork iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC65B0202027BBCD001FD4EB /* FCNetwork_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetwork_iOSTests.swift; sourceTree = "<group>"; };
-		AC65B0222027BBCD001FD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC65B02F2027BC11001FD4EB /* FCNetwork_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCNetwork_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC65B0312027BC11001FD4EB /* FCNetwork_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCNetwork_macOS.h; sourceTree = "<group>"; };
-		AC65B0322027BC11001FD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC65B0372027BC11001FD4EB /* FCNetwork macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCNetwork macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC65B03C2027BC11001FD4EB /* FCNetwork_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetwork_macOSTests.swift; sourceTree = "<group>"; };
-		AC65B03E2027BC11001FD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC65B0122027BBCC001FD4EB /* FCNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65B0152027BBCC001FD4EB /* FCNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCNetwork.h; sourceTree = "<group>"; };
+		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		AC65B02F2027BC11001FD4EB /* FCNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65B0322027BC11001FD4EB /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		AC65B04A2027C51F001FD4EB /* FCNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,26 +29,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC65B0182027BBCD001FD4EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC65B01C2027BBCD001FD4EB /* FCNetwork_iOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC65B02B2027BC11001FD4EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC65B0342027BC11001FD4EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC65B0382027BC11001FD4EB /* FCNetwork_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +42,7 @@
 		AC65B0062027B8DC001FD4EB = {
 			isa = PBXGroup;
 			children = (
-				AC65B0142027BBCC001FD4EB /* FCNetwork iOS */,
-				AC65B01F2027BBCD001FD4EB /* FCNetwork iOSTests */,
-				AC65B0302027BC11001FD4EB /* FCNetwork macOS */,
-				AC65B03B2027BC11001FD4EB /* FCNetwork macOSTests */,
+				AC65B0462027BD37001FD4EB /* Sources */,
 				AC65B0132027BBCC001FD4EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,48 +50,21 @@
 		AC65B0132027BBCC001FD4EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC65B0122027BBCC001FD4EB /* FCNetwork_iOS.framework */,
-				AC65B01B2027BBCD001FD4EB /* FCNetwork iOSTests.xctest */,
-				AC65B02F2027BC11001FD4EB /* FCNetwork_macOS.framework */,
-				AC65B0372027BC11001FD4EB /* FCNetwork macOSTests.xctest */,
+				AC65B0122027BBCC001FD4EB /* FCNetwork.framework */,
+				AC65B02F2027BC11001FD4EB /* FCNetwork.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC65B0142027BBCC001FD4EB /* FCNetwork iOS */ = {
+		AC65B0462027BD37001FD4EB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AC65B0152027BBCC001FD4EB /* FCNetwork_iOS.h */,
-				AC65B0162027BBCC001FD4EB /* Info.plist */,
+				AC65B0322027BC11001FD4EB /* Info-macOS.plist */,
+				AC65B0152027BBCC001FD4EB /* FCNetwork.h */,
+				AC65B0162027BBCC001FD4EB /* Info-iOS.plist */,
+				AC65B04A2027C51F001FD4EB /* FCNetwork.swift */,
 			);
-			path = "FCNetwork iOS";
-			sourceTree = "<group>";
-		};
-		AC65B01F2027BBCD001FD4EB /* FCNetwork iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC65B0202027BBCD001FD4EB /* FCNetwork_iOSTests.swift */,
-				AC65B0222027BBCD001FD4EB /* Info.plist */,
-			);
-			path = "FCNetwork iOSTests";
-			sourceTree = "<group>";
-		};
-		AC65B0302027BC11001FD4EB /* FCNetwork macOS */ = {
-			isa = PBXGroup;
-			children = (
-				AC65B0312027BC11001FD4EB /* FCNetwork_macOS.h */,
-				AC65B0322027BC11001FD4EB /* Info.plist */,
-			);
-			path = "FCNetwork macOS";
-			sourceTree = "<group>";
-		};
-		AC65B03B2027BC11001FD4EB /* FCNetwork macOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC65B03C2027BC11001FD4EB /* FCNetwork_macOSTests.swift */,
-				AC65B03E2027BC11001FD4EB /* Info.plist */,
-			);
-			path = "FCNetwork macOSTests";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +74,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B0232027BBCD001FD4EB /* FCNetwork_iOS.h in Headers */,
+				AC65B0232027BBCD001FD4EB /* FCNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +82,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B03F2027BC11001FD4EB /* FCNetwork_macOS.h in Headers */,
+				AC65B0472027C02C001FD4EB /* FCNetwork.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,26 +104,8 @@
 			);
 			name = "FCNetwork iOS";
 			productName = "FCNetwork iOS";
-			productReference = AC65B0122027BBCC001FD4EB /* FCNetwork_iOS.framework */;
+			productReference = AC65B0122027BBCC001FD4EB /* FCNetwork.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		AC65B01A2027BBCD001FD4EB /* FCNetwork iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC65B0272027BBCD001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork iOSTests" */;
-			buildPhases = (
-				AC65B0172027BBCD001FD4EB /* Sources */,
-				AC65B0182027BBCD001FD4EB /* Frameworks */,
-				AC65B0192027BBCD001FD4EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC65B01E2027BBCD001FD4EB /* PBXTargetDependency */,
-			);
-			name = "FCNetwork iOSTests";
-			productName = "FCNetwork iOSTests";
-			productReference = AC65B01B2027BBCD001FD4EB /* FCNetwork iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AC65B02E2027BC11001FD4EB /* FCNetwork macOS */ = {
 			isa = PBXNativeTarget;
@@ -212,26 +122,8 @@
 			);
 			name = "FCNetwork macOS";
 			productName = "FCNetwork macOS";
-			productReference = AC65B02F2027BC11001FD4EB /* FCNetwork_macOS.framework */;
+			productReference = AC65B02F2027BC11001FD4EB /* FCNetwork.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		AC65B0362027BC11001FD4EB /* FCNetwork macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC65B0432027BC11001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork macOSTests" */;
-			buildPhases = (
-				AC65B0332027BC11001FD4EB /* Sources */,
-				AC65B0342027BC11001FD4EB /* Frameworks */,
-				AC65B0352027BC11001FD4EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC65B03A2027BC11001FD4EB /* PBXTargetDependency */,
-			);
-			name = "FCNetwork macOSTests";
-			productName = "FCNetwork macOSTests";
-			productReference = AC65B0372027BC11001FD4EB /* FCNetwork macOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -244,17 +136,10 @@
 				TargetAttributes = {
 					AC65B0112027BBCC001FD4EB = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					AC65B01A2027BBCD001FD4EB = {
-						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					AC65B02E2027BC11001FD4EB = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					AC65B0362027BC11001FD4EB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -273,22 +158,13 @@
 			projectRoot = "";
 			targets = (
 				AC65B0112027BBCC001FD4EB /* FCNetwork iOS */,
-				AC65B01A2027BBCD001FD4EB /* FCNetwork iOSTests */,
 				AC65B02E2027BC11001FD4EB /* FCNetwork macOS */,
-				AC65B0362027BC11001FD4EB /* FCNetwork macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AC65B0102027BBCC001FD4EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC65B0192027BBCD001FD4EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,13 +178,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC65B0352027BC11001FD4EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -316,14 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC65B0172027BBCD001FD4EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC65B0212027BBCD001FD4EB /* FCNetwork_iOSTests.swift in Sources */,
+				AC65B04B2027C51F001FD4EB /* FCNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,39 +196,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC65B0332027BC11001FD4EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC65B03D2027BC11001FD4EB /* FCNetwork_macOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AC65B01E2027BBCD001FD4EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC65B0112027BBCC001FD4EB /* FCNetwork iOS */;
-			targetProxy = AC65B01D2027BBCD001FD4EB /* PBXContainerItemProxy */;
-		};
-		AC65B03A2027BC11001FD4EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC65B02E2027BC11001FD4EB /* FCNetwork macOS */;
-			targetProxy = AC65B0392027BC11001FD4EB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AC65B00B2027B8DC001FD4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Debug;
 		};
 		AC65B00C2027B8DC001FD4EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Release;
 		};
@@ -374,6 +219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -425,14 +271,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = FCNetwork;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -448,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -493,13 +340,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork iOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = FCNetwork;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -511,133 +358,11 @@
 			};
 			name = Release;
 		};
-		AC65B0282027BBCD001FD4EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = VW7TQ7A4EY;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AC65B0292027BBCD001FD4EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = VW7TQ7A4EY;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		AC65B0412027BC11001FD4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -691,14 +416,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork macOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = FCNetwork;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -713,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -760,141 +486,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork macOS/Info.plist";
+				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = FCNetwork;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AC65B0442027BC11001FD4EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = VW7TQ7A4EY;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork macOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		AC65B0452027BC11001FD4EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = VW7TQ7A4EY;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetwork macOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -919,29 +523,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC65B0272027BBCD001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC65B0282027BBCD001FD4EB /* Debug */,
-				AC65B0292027BBCD001FD4EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		AC65B0402027BC11001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC65B0412027BC11001FD4EB /* Debug */,
 				AC65B0422027BC11001FD4EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC65B0432027BC11001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC65B0442027BC11001FD4EB /* Debug */,
-				AC65B0452027BC11001FD4EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
