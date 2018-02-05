@@ -17,6 +17,8 @@
 		AC90E60820282C570062802C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60420282A0D0062802C /* Request.swift */; };
 		AC90E60A20282C720062802C /* FCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* FCNetwork.swift */; };
 		AC90E60B20282C720062802C /* FCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* FCNetwork.swift */; };
+		AC90E60D20282D390062802C /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60C20282D390062802C /* RequestTests.swift */; };
+		AC90E60E20282D390062802C /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60C20282D390062802C /* RequestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		AC65B0702027CD1C001FD4EB /* FCNetworkTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCNetworkTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0742027CD1C001FD4EB /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		AC90E60420282A0D0062802C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AC90E60C20282D390062802C /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		AC65B0622027CCD1001FD4EB /* FCNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC90E60C20282D390062802C /* RequestTests.swift */,
 				AC65B0632027CCD1001FD4EB /* FCNetworkTests.swift */,
 				AC65B0652027CCD1001FD4EB /* Info-iOS.plist */,
 				AC65B0742027CD1C001FD4EB /* Info-macOS.plist */,
@@ -332,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC65B0642027CCD1001FD4EB /* FCNetworkTests.swift in Sources */,
+				AC90E60D20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC65B07B2027CD8F001FD4EB /* FCNetworkTests.swift in Sources */,
+				AC90E60E20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
