@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import FCNetwork
 
 class RequestTests: XCTestCase {
     
@@ -13,22 +14,29 @@ class RequestTests: XCTestCase {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testHTTPMethodGet() {
+        let httpMethod: HTTPMethod = .get
+        XCTAssertEqual("GET", httpMethod.getMethodString())
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testHTTPMethodPatch() {
+        let httpMethod: HTTPMethod = .patch
+        XCTAssertEqual("PATCH", httpMethod.getMethodString())
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testHTTPMethodPut() {
+        let httpMethod: HTTPMethod = .put
+        XCTAssertEqual("PUT", httpMethod.getMethodString())
     }
-    
+
+    func testHTTPMethodPost() {
+        let httpMethod: HTTPMethod = .post
+        XCTAssertEqual("POST", httpMethod.getMethodString())
+    }
+
+    func testHTTPMethodDelete() {
+        let httpMethod: HTTPMethod = .delete
+        XCTAssertEqual("DELETE", httpMethod.getMethodString())
+    }
 }
