@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum HTTPMethod: String {
+public enum HTTPMethod {
     case get, put, patch, post, delete
 
     public func getMethodString() -> String {
