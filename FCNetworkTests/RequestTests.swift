@@ -17,26 +17,26 @@ class RequestTests: XCTestCase {
 
     func testHTTPMethodGet() {
         let httpMethod: HTTPMethod = .get
-        XCTAssertEqual("GET", httpMethod.getMethodString())
+        XCTAssertEqual("GET", httpMethod.getValue())
     }
 
     func testHTTPMethodPatch() {
         let httpMethod: HTTPMethod = .patch
-        XCTAssertEqual("PATCH", httpMethod.getMethodString())
+        XCTAssertEqual("PATCH", httpMethod.getValue())
     }
 
     func testHTTPMethodPut() {
         let httpMethod: HTTPMethod = .put
-        XCTAssertEqual("PUT", httpMethod.getMethodString())
+        XCTAssertEqual("PUT", httpMethod.getValue())
     }
 
     func testHTTPMethodPost() {
         let httpMethod: HTTPMethod = .post
-        XCTAssertEqual("POST", httpMethod.getMethodString())
+        XCTAssertEqual("POST", httpMethod.getValue())
     }
 
     func testHTTPMethodDelete() {
         let httpMethod: HTTPMethod = .delete
-        XCTAssertEqual("DELETE", httpMethod.getMethodString())
+        XCTAssertEqual("DELETE", httpMethod.getValue())
     }
 }

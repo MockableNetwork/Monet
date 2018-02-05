@@ -10,7 +10,7 @@ import Foundation
 public enum HTTPMethod {
     case get, put, patch, post, delete
 
-    public func getMethodString() -> String {
+    public func getValue() -> String {
         switch self {
         case .get:
             return "GET"
