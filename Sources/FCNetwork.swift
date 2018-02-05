@@ -1,6 +1,6 @@
 //
 //  FCNetwork.swift
-//  FCNetwork iOS
+//  FCNetwork
 //
 //  Created by Francisco Javier Chacon de Dios on 04/02/18.
 //
