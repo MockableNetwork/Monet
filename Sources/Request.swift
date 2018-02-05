@@ -26,6 +26,12 @@ public enum HTTPMethod {
     }
 }
 
+public typealias Headers = [String: String]
+
+public typealias Parameters = [String: Any]
+
+public typealias ResponseResult = [String: Any]
+
 public protocol URLString {
     func toURL() -> URL?
 }
