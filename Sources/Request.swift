@@ -25,3 +25,19 @@ public enum HTTPMethod {
         }
     }
 }
+
+public protocol URLString {
+    func toURL() -> URL?
+}
+
+extension String: URLString {
+
+    public func toURL() -> URL? {
+        if let url = URL(string: self) {
+            return url
+        } else {
+            return nil
+        }
+    }
+
+}
