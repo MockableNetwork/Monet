@@ -47,3 +47,38 @@ extension String: URLString {
     }
 
 }
+
+open class NetworkRequest {
+
+    open static let shared: NetworkRequest = { return NetworkRequest() }()
+
+    func request(from urlString: URLString,
+                 using method: HTTPMethod = .get,
+                 sending headers: Headers? = nil,
+                 and parameters: Parameters? = nil,
+                 setting timeout: TimeInterval = 30,
+                 success: @escaping(Data, URLResponse) -> Void,
+                 fail: @escaping(Error) -> Void) {
+
+        if let url = urlString.toURL() {
+            var urlRequest: URLRequest = URLRequest(url: url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: timeout)
+
+            if let headers = headers {
+                for (key, value) in headers {
+                    urlRequest.setValue(value, forHTTPHeaderField: key)
+                }
+            }
+
+            URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
+                if let data = data, let response = response {
+                    success(data, response)
+                } else if let error = error {
+                    fail(error)
+                }
+            }).resume()
+        } else {
+            fail(NSError(domain: "FCNetwork", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL: \(urlString)"]))
+        }
+    }
+
+}
