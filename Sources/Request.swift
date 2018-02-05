@@ -22,8 +22,6 @@ public enum HTTPMethod: String {
             return "POST"
         case .delete:
             return "DELETE"
-        default:
-            "GET"
         }
     }
 }
