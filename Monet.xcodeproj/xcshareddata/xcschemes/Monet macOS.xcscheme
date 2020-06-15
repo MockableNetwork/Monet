@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC65B0112027BBCC001FD4EB"
-               BuildableName = "FCNetwork.framework"
-               BlueprintName = "FCNetwork iOS"
-               ReferencedContainer = "container:FCNetwork.xcodeproj">
+               BlueprintIdentifier = "AC65B02E2027BC11001FD4EB"
+               BuildableName = "Monet.framework"
+               BlueprintName = "Monet macOS"
+               ReferencedContainer = "container:Monet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,18 +26,14 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,14 +43,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC65B0112027BBCC001FD4EB"
-            BuildableName = "FCNetwork.framework"
-            BlueprintName = "FCNetwork iOS"
-            ReferencedContainer = "container:FCNetwork.xcodeproj">
+            BlueprintIdentifier = "AC65B02E2027BC11001FD4EB"
+            BuildableName = "Monet.framework"
+            BlueprintName = "Monet macOS"
+            ReferencedContainer = "container:Monet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -65,10 +59,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AC65B0112027BBCC001FD4EB"
-            BuildableName = "FCNetwork.framework"
-            BlueprintName = "FCNetwork iOS"
-            ReferencedContainer = "container:FCNetwork.xcodeproj">
+            BlueprintIdentifier = "AC65B02E2027BC11001FD4EB"
+            BuildableName = "Monet.framework"
+            BlueprintName = "Monet macOS"
+            ReferencedContainer = "container:Monet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

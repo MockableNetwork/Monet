@@ -1,14 +1,14 @@
 //
-//  FCNetworkTests_iOS.swift
-//  FCNetworkTests iOS
+//  MonetTests_iOS.swift
+//  MonetTests iOS
 //
 //  Created by Francisco Javier Chacon de Dios on 04/02/18.
 //
 
 import XCTest
-import FCNetwork
+import Monet
 
-class FCNetworkTests: XCTestCase {
+class MonetTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

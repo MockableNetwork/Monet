@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FCNetwork.xcodeproj">
+      location = "self:/Users/franciscochacon/projects/Monet/Monet.xcodeproj">
    </FileRef>
 </Workspace>

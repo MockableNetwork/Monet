@@ -1,6 +1,6 @@
 //
 //  Request.swift
-//  FCNetwork
+//  Monet
 //
 //  Created by Francisco Javier Chacon de Dios on 04/02/18.
 //
@@ -37,7 +37,6 @@ public protocol URLString {
 }
 
 extension String: URLString {
-
     public func toURL() -> URL? {
         if let url = URL(string: self) {
             return url
@@ -45,12 +44,10 @@ extension String: URLString {
             return nil
         }
     }
-
 }
 
 open class NetworkRequest {
-
-    open static let shared: NetworkRequest = { return NetworkRequest() }()
+    public static let shared: NetworkRequest = { return NetworkRequest() }()
 
     func request(from urlString: URLString,
                  using method: HTTPMethod = .get,
@@ -77,8 +74,7 @@ open class NetworkRequest {
                 }
             }).resume()
         } else {
-            fail(NSError(domain: "FCNetwork", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL: \(urlString)"]))
+            fail(NSError(domain: "Monet", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL: \(urlString)"]))
         }
     }
-
 }
