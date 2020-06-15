@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC65B0232027BBCD001FD4EB /* FCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* FCNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC65B0472027C02C001FD4EB /* FCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* FCNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC65B0642027CCD1001FD4EB /* FCNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* FCNetworkTests.swift */; };
-		AC65B0662027CCD1001FD4EB /* FCNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC65B0122027BBCC001FD4EB /* FCNetwork.framework */; };
-		AC65B0752027CD1C001FD4EB /* FCNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC65B02F2027BC11001FD4EB /* FCNetwork.framework */; };
-		AC65B07B2027CD8F001FD4EB /* FCNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* FCNetworkTests.swift */; };
+		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
+		AC65B0662027CCD1001FD4EB /* Monet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC65B0122027BBCC001FD4EB /* Monet.framework */; };
+		AC65B0752027CD1C001FD4EB /* Monet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC65B02F2027BC11001FD4EB /* Monet.framework */; };
+		AC65B07B2027CD8F001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
 		AC90E60720282C560062802C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60420282A0D0062802C /* Request.swift */; };
 		AC90E60820282C570062802C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60420282A0D0062802C /* Request.swift */; };
-		AC90E60A20282C720062802C /* FCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* FCNetwork.swift */; };
-		AC90E60B20282C720062802C /* FCNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* FCNetwork.swift */; };
+		AC90E60A20282C720062802C /* Monet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* Monet.swift */; };
+		AC90E60B20282C720062802C /* Monet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B04A2027C51F001FD4EB /* Monet.swift */; };
 		AC90E60D20282D390062802C /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60C20282D390062802C /* RequestTests.swift */; };
 		AC90E60E20282D390062802C /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC90E60C20282D390062802C /* RequestTests.swift */; };
 /* End PBXBuildFile section */
@@ -39,16 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC65B0122027BBCC001FD4EB /* FCNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC65B0152027BBCC001FD4EB /* FCNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCNetwork.h; sourceTree = "<group>"; };
+		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		AC65B02F2027BC11001FD4EB /* FCNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65B02F2027BC11001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0322027BC11001FD4EB /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		AC65B04A2027C51F001FD4EB /* FCNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetwork.swift; sourceTree = "<group>"; };
-		AC65B0612027CCD1001FD4EB /* FCNetworkTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCNetworkTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC65B0632027CCD1001FD4EB /* FCNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCNetworkTests.swift; sourceTree = "<group>"; };
+		AC65B04A2027C51F001FD4EB /* Monet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monet.swift; sourceTree = "<group>"; };
+		AC65B0612027CCD1001FD4EB /* MonetTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MonetTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65B0632027CCD1001FD4EB /* MonetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetTests.swift; sourceTree = "<group>"; };
 		AC65B0652027CCD1001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		AC65B0702027CD1C001FD4EB /* FCNetworkTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FCNetworkTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC65B0702027CD1C001FD4EB /* MonetTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MonetTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0742027CD1C001FD4EB /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		AC90E60420282A0D0062802C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		AC90E60C20282D390062802C /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B0662027CCD1001FD4EB /* FCNetwork.framework in Frameworks */,
+				AC65B0662027CCD1001FD4EB /* Monet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B0752027CD1C001FD4EB /* FCNetwork.framework in Frameworks */,
+				AC65B0752027CD1C001FD4EB /* Monet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				AC65B0462027BD37001FD4EB /* Sources */,
-				AC65B0622027CCD1001FD4EB /* FCNetworkTests */,
+				AC65B0622027CCD1001FD4EB /* MonetTests */,
 				AC65B0132027BBCC001FD4EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,10 +100,10 @@
 		AC65B0132027BBCC001FD4EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC65B0122027BBCC001FD4EB /* FCNetwork.framework */,
-				AC65B02F2027BC11001FD4EB /* FCNetwork.framework */,
-				AC65B0612027CCD1001FD4EB /* FCNetworkTests iOS.xctest */,
-				AC65B0702027CD1C001FD4EB /* FCNetworkTests macOS.xctest */,
+				AC65B0122027BBCC001FD4EB /* Monet.framework */,
+				AC65B02F2027BC11001FD4EB /* Monet.framework */,
+				AC65B0612027CCD1001FD4EB /* MonetTests iOS.xctest */,
+				AC65B0702027CD1C001FD4EB /* MonetTests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,22 +112,22 @@
 			isa = PBXGroup;
 			children = (
 				AC90E602202829970062802C /* Configuration files */,
-				AC65B0152027BBCC001FD4EB /* FCNetwork.h */,
-				AC65B04A2027C51F001FD4EB /* FCNetwork.swift */,
+				AC65B0152027BBCC001FD4EB /* Monet.h */,
+				AC65B04A2027C51F001FD4EB /* Monet.swift */,
 				AC90E60420282A0D0062802C /* Request.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		AC65B0622027CCD1001FD4EB /* FCNetworkTests */ = {
+		AC65B0622027CCD1001FD4EB /* MonetTests */ = {
 			isa = PBXGroup;
 			children = (
 				AC90E60C20282D390062802C /* RequestTests.swift */,
-				AC65B0632027CCD1001FD4EB /* FCNetworkTests.swift */,
+				AC65B0632027CCD1001FD4EB /* MonetTests.swift */,
 				AC65B0652027CCD1001FD4EB /* Info-iOS.plist */,
 				AC65B0742027CD1C001FD4EB /* Info-macOS.plist */,
 			);
-			path = FCNetworkTests;
+			path = MonetTests;
 			sourceTree = "<group>";
 		};
 		AC90E602202829970062802C /* Configuration files */ = {
@@ -146,7 +146,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B0232027BBCD001FD4EB /* FCNetwork.h in Headers */,
+				AC65B0232027BBCD001FD4EB /* Monet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,16 +154,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B0472027C02C001FD4EB /* FCNetwork.h in Headers */,
+				AC65B0472027C02C001FD4EB /* Monet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AC65B0112027BBCC001FD4EB /* FCNetwork iOS */ = {
+		AC65B0112027BBCC001FD4EB /* Monet iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC65B0242027BBCD001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork iOS" */;
+			buildConfigurationList = AC65B0242027BBCD001FD4EB /* Build configuration list for PBXNativeTarget "Monet iOS" */;
 			buildPhases = (
 				AC65B00D2027BBCC001FD4EB /* Sources */,
 				AC65B00E2027BBCC001FD4EB /* Frameworks */,
@@ -174,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = "FCNetwork iOS";
+			name = "Monet iOS";
 			productName = "FCNetwork iOS";
-			productReference = AC65B0122027BBCC001FD4EB /* FCNetwork.framework */;
+			productReference = AC65B0122027BBCC001FD4EB /* Monet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AC65B02E2027BC11001FD4EB /* FCNetwork macOS */ = {
+		AC65B02E2027BC11001FD4EB /* Monet macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC65B0402027BC11001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork macOS" */;
+			buildConfigurationList = AC65B0402027BC11001FD4EB /* Build configuration list for PBXNativeTarget "Monet macOS" */;
 			buildPhases = (
 				AC65B02A2027BC11001FD4EB /* Sources */,
 				AC65B02B2027BC11001FD4EB /* Frameworks */,
@@ -192,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = "FCNetwork macOS";
+			name = "Monet macOS";
 			productName = "FCNetwork macOS";
-			productReference = AC65B02F2027BC11001FD4EB /* FCNetwork.framework */;
+			productReference = AC65B02F2027BC11001FD4EB /* Monet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AC65B0602027CCD1001FD4EB /* FCNetworkTests iOS */ = {
+		AC65B0602027CCD1001FD4EB /* MonetTests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC65B0692027CCD1001FD4EB /* Build configuration list for PBXNativeTarget "FCNetworkTests iOS" */;
+			buildConfigurationList = AC65B0692027CCD1001FD4EB /* Build configuration list for PBXNativeTarget "MonetTests iOS" */;
 			buildPhases = (
 				AC65B05D2027CCD1001FD4EB /* Sources */,
 				AC65B05E2027CCD1001FD4EB /* Frameworks */,
@@ -210,14 +210,14 @@
 			dependencies = (
 				AC65B0682027CCD1001FD4EB /* PBXTargetDependency */,
 			);
-			name = "FCNetworkTests iOS";
+			name = "MonetTests iOS";
 			productName = "FCNetworkTests iOS";
-			productReference = AC65B0612027CCD1001FD4EB /* FCNetworkTests iOS.xctest */;
+			productReference = AC65B0612027CCD1001FD4EB /* MonetTests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AC65B06F2027CD1C001FD4EB /* FCNetworkTests macOS */ = {
+		AC65B06F2027CD1C001FD4EB /* MonetTests macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC65B0782027CD1C001FD4EB /* Build configuration list for PBXNativeTarget "FCNetworkTests macOS" */;
+			buildConfigurationList = AC65B0782027CD1C001FD4EB /* Build configuration list for PBXNativeTarget "MonetTests macOS" */;
 			buildPhases = (
 				AC65B06C2027CD1C001FD4EB /* Sources */,
 				AC65B06D2027CD1C001FD4EB /* Frameworks */,
@@ -228,9 +228,9 @@
 			dependencies = (
 				AC65B0772027CD1C001FD4EB /* PBXTargetDependency */,
 			);
-			name = "FCNetworkTests macOS";
+			name = "MonetTests macOS";
 			productName = "FCNetworkTests macOS";
-			productReference = AC65B0702027CD1C001FD4EB /* FCNetworkTests macOS.xctest */;
+			productReference = AC65B0702027CD1C001FD4EB /* MonetTests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -241,6 +241,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Monet;
 				TargetAttributes = {
 					AC65B0112027BBCC001FD4EB = {
 						CreatedOnToolsVersion = 9.2;
@@ -261,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC65B00A2027B8DC001FD4EB /* Build configuration list for PBXProject "FCNetwork" */;
+			buildConfigurationList = AC65B00A2027B8DC001FD4EB /* Build configuration list for PBXProject "Monet" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,10 +274,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC65B0112027BBCC001FD4EB /* FCNetwork iOS */,
-				AC65B02E2027BC11001FD4EB /* FCNetwork macOS */,
-				AC65B0602027CCD1001FD4EB /* FCNetworkTests iOS */,
-				AC65B06F2027CD1C001FD4EB /* FCNetworkTests macOS */,
+				AC65B0112027BBCC001FD4EB /* Monet iOS */,
+				AC65B02E2027BC11001FD4EB /* Monet macOS */,
+				AC65B0602027CCD1001FD4EB /* MonetTests iOS */,
+				AC65B06F2027CD1C001FD4EB /* MonetTests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC90E60820282C570062802C /* Request.swift in Sources */,
-				AC90E60A20282C720062802C /* FCNetwork.swift in Sources */,
+				AC90E60A20282C720062802C /* Monet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC90E60720282C560062802C /* Request.swift in Sources */,
-				AC90E60B20282C720062802C /* FCNetwork.swift in Sources */,
+				AC90E60B20282C720062802C /* Monet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B0642027CCD1001FD4EB /* FCNetworkTests.swift in Sources */,
+				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
 				AC90E60D20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC65B07B2027CD8F001FD4EB /* FCNetworkTests.swift in Sources */,
+				AC65B07B2027CD8F001FD4EB /* MonetTests.swift in Sources */,
 				AC90E60E20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,12 +355,12 @@
 /* Begin PBXTargetDependency section */
 		AC65B0682027CCD1001FD4EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC65B0112027BBCC001FD4EB /* FCNetwork iOS */;
+			target = AC65B0112027BBCC001FD4EB /* Monet iOS */;
 			targetProxy = AC65B0672027CCD1001FD4EB /* PBXContainerItemProxy */;
 		};
 		AC65B0772027CD1C001FD4EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC65B02E2027BC11001FD4EB /* FCNetwork macOS */;
+			target = AC65B02E2027BC11001FD4EB /* Monet macOS */;
 			targetProxy = AC65B0762027CD1C001FD4EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -443,8 +444,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-iOS";
-				PRODUCT_NAME = FCNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
+				PRODUCT_NAME = Monet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -511,8 +512,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-iOS";
-				PRODUCT_NAME = FCNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
+				PRODUCT_NAME = Monet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -588,8 +589,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-macOS";
-				PRODUCT_NAME = FCNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
+				PRODUCT_NAME = Monet;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -657,8 +658,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetwork-macOS";
-				PRODUCT_NAME = FCNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
+				PRODUCT_NAME = Monet;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -718,12 +719,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetworkTests/Info-iOs.plist";
+				INFOPLIST_FILE = "MonetTests/Info-iOs.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetworkTests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -777,11 +778,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetworkTests/Info-iOs.plist";
+				INFOPLIST_FILE = "MonetTests/Info-iOs.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetworkTests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -843,12 +844,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetworkTests/Info-macOS.plist";
+				INFOPLIST_FILE = "MonetTests/Info-macOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetworkTests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -903,11 +904,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "FCNetworkTests/Info-macOS.plist";
+				INFOPLIST_FILE = "MonetTests/Info-macOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fjcd.FCNetworkTests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -918,7 +919,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC65B00A2027B8DC001FD4EB /* Build configuration list for PBXProject "FCNetwork" */ = {
+		AC65B00A2027B8DC001FD4EB /* Build configuration list for PBXProject "Monet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC65B00B2027B8DC001FD4EB /* Debug */,
@@ -927,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC65B0242027BBCD001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork iOS" */ = {
+		AC65B0242027BBCD001FD4EB /* Build configuration list for PBXNativeTarget "Monet iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC65B0252027BBCD001FD4EB /* Debug */,
@@ -936,7 +937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC65B0402027BC11001FD4EB /* Build configuration list for PBXNativeTarget "FCNetwork macOS" */ = {
+		AC65B0402027BC11001FD4EB /* Build configuration list for PBXNativeTarget "Monet macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC65B0412027BC11001FD4EB /* Debug */,
@@ -945,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC65B0692027CCD1001FD4EB /* Build configuration list for PBXNativeTarget "FCNetworkTests iOS" */ = {
+		AC65B0692027CCD1001FD4EB /* Build configuration list for PBXNativeTarget "MonetTests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC65B06A2027CCD1001FD4EB /* Debug */,
@@ -954,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC65B0782027CD1C001FD4EB /* Build configuration list for PBXNativeTarget "FCNetworkTests macOS" */ = {
+		AC65B0782027CD1C001FD4EB /* Build configuration list for PBXNativeTarget "MonetTests macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC65B0792027CD1C001FD4EB /* Debug */,

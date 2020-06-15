@@ -1,12 +1,12 @@
 //
 //  RequestTests.swift
-//  FCNetwork
+//  Monet
 //
 //  Created by Francisco Javier Chacon de Dios on 05/02/18.
 //
 
 import XCTest
-import FCNetwork
+import Monet
 
 class RequestTests: XCTestCase {
     
