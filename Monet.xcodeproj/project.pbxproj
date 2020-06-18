@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
 		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
 		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AC65B0152027BBCC001FD4EB /* Monet.h */,
 				AC65B04A2027C51F001FD4EB /* Monet.swift */,
 				AC90E60420282A0D0062802C /* Request.swift */,
+				289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				AC90E60820282C570062802C /* Request.swift in Sources */,
 				AC90E60A20282C720062802C /* Monet.swift in Sources */,
+				289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
