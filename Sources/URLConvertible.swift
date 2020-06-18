@@ -1,6 +1,6 @@
 //
 //  URLConvertible.swift
-//  Monet iOS
+//  Monet
 //
 //  Created by Francisco Javier Chacon de Dios on 17/06/20.
 //  Copyright © 2020 Monet. All rights reserved.
