@@ -17,6 +17,12 @@
 		289698DA249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D8249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift */; };
 		289698DC249BCDE400BD0FE6 /* URL+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */; };
 		289698DD249BCDE400BD0FE6 /* URL+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */; };
+		289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DE249BEC0D00BD0FE6 /* StringTests.swift */; };
+		289698E1249C221400BD0FE6 /* URLComponentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E0249C221400BD0FE6 /* URLComponentsTest.swift */; };
+		289698E2249C221400BD0FE6 /* URLComponentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E0249C221400BD0FE6 /* URLComponentsTest.swift */; };
+		289698E3249C222400BD0FE6 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DE249BEC0D00BD0FE6 /* StringTests.swift */; };
+		289698E5249C33AB00BD0FE6 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E4249C33AB00BD0FE6 /* URLTests.swift */; };
+		289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E4249C33AB00BD0FE6 /* URLTests.swift */; };
 		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
@@ -54,6 +60,9 @@
 		289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLConvertible.swift"; sourceTree = "<group>"; };
 		289698D8249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+URLConvertible.swift"; sourceTree = "<group>"; };
 		289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+URLConvertible.swift"; sourceTree = "<group>"; };
+		289698DE249BEC0D00BD0FE6 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		289698E0249C221400BD0FE6 /* URLComponentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTest.swift; sourceTree = "<group>"; };
+		289698E4249C33AB00BD0FE6 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -142,6 +151,9 @@
 		AC65B0622027CCD1001FD4EB /* MonetTests */ = {
 			isa = PBXGroup;
 			children = (
+				289698E4249C33AB00BD0FE6 /* URLTests.swift */,
+				289698E0249C221400BD0FE6 /* URLComponentsTest.swift */,
+				289698DE249BEC0D00BD0FE6 /* StringTests.swift */,
 				AC90E60C20282D390062802C /* RequestTests.swift */,
 				AC65B0632027CCD1001FD4EB /* MonetTests.swift */,
 				AC65B0652027CCD1001FD4EB /* Info-iOS.plist */,
@@ -368,7 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
+				289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */,
+				289698E5249C33AB00BD0FE6 /* URLTests.swift in Sources */,
 				AC90E60D20282D390062802C /* RequestTests.swift in Sources */,
+				289698E1249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289698E2249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,
 				AC65B07B2027CD8F001FD4EB /* MonetTests.swift in Sources */,
+				289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */,
+				289698E3249C222400BD0FE6 /* StringTests.swift in Sources */,
 				AC90E60E20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

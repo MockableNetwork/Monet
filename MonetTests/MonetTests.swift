@@ -1,6 +1,6 @@
 //
-//  MonetTests_iOS.swift
-//  MonetTests iOS
+//  MonetTests.swift
+//  Monet
 //
 //  Created by Francisco Javier Chacon de Dios on 04/02/18.
 //
