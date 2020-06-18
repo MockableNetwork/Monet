@@ -246,6 +246,7 @@
 		AC65B0072027B8DC001FD4EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MNT;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Monet;
