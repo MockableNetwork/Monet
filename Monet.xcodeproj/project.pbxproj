@@ -10,6 +10,7 @@
 		289698CC2499534000BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698CD2499534400BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
+		289698D3249BC4EB00BD0FE6 /* String+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */; };
 		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		289698CB2499534000BD0FE6 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
+		289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLConvertible.swift"; sourceTree = "<group>"; };
 		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				AC90E60420282A0D0062802C /* Request.swift */,
 				289698CB2499534000BD0FE6 /* Errors.swift */,
 				289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */,
+				289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC90E60820282C570062802C /* Request.swift in Sources */,
+				289698D3249BC4EB00BD0FE6 /* String+URLConvertible.swift in Sources */,
 				289698CC2499534000BD0FE6 /* Errors.swift in Sources */,
 				AC90E60A20282C720062802C /* Monet.swift in Sources */,
 				289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */,
