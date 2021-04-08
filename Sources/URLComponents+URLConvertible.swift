@@ -10,9 +10,7 @@ import Foundation
 
 extension URLComponents: URLConvertible {
     public func toUrl() throws -> URL {
-        guard let url = url else {
-            throw MNTError.invalidUrl(url: self)
-        }
+        guard let url = url else { throw MNTError.invalidUrl(url: self) }
 
         return url
     }
