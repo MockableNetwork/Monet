@@ -13,7 +13,7 @@ public protocol Describable {
 }
 
 public enum MNTError: Error {
-    public enum InvalidResponseReason {
+    public enum InvalidResponseReason: Error {
         case badRequest
         case unauthorized
         case forbidden
@@ -26,6 +26,38 @@ public enum MNTError: Error {
         case serviceUnavailable
         case gatewayTimeout
         case other(error: Error)
+
+        init(code: Int) {
+            switch code {
+            case 400:
+                self = .badRequest
+            case 401:
+                self = .unauthorized
+            case 403:
+                self = .forbidden
+            case 404:
+                self = .notFound
+            case 405:
+                self = .methodNotAllowed
+            case 408:
+                self = .requestTimeout
+            case 422:
+                self = .unprocessableEntity
+            case 429:
+                self = .tooManyRequests
+            case 500:
+                self = .internalServerError
+            case 503:
+                self = .serviceUnavailable
+            case 504:
+                self = .gatewayTimeout
+            default:
+                let error = NSError(domain: "co.monet",
+                                    code: code,
+                                    userInfo: [NSLocalizedDescriptionKey: "Something went wrong. (\(code))"])
+                self = .other(error: error)
+            }
+        }
     }
 
     public enum MockFailReason: Error {
