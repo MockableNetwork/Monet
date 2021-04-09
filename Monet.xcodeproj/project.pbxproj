@@ -17,6 +17,7 @@
 		28093D0D261E7B8A00822896 /* Data+MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D0B261E7B8A00822896 /* Data+MNTMockableResponseBody.swift */; };
 		28093D13261E7BE000822896 /* MNTMockFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D12261E7BE000822896 /* MNTMockFile.swift */; };
 		28093D14261E7BE000822896 /* MNTMockFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D12261E7BE000822896 /* MNTMockFile.swift */; };
+		28093D24261F7D9100822896 /* MNTErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D23261F7D9100822896 /* MNTErrorTests.swift */; };
 		289698CC2499534000BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698CD2499534400BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
@@ -72,6 +73,7 @@
 		28093D04261E7A0A00822896 /* String+MNTMockableResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MNTMockableResponseBody.swift"; sourceTree = "<group>"; };
 		28093D0B261E7B8A00822896 /* Data+MNTMockableResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MNTMockableResponseBody.swift"; sourceTree = "<group>"; };
 		28093D12261E7BE000822896 /* MNTMockFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTMockFile.swift; sourceTree = "<group>"; };
+		28093D23261F7D9100822896 /* MNTErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTErrorTests.swift; sourceTree = "<group>"; };
 		289698CB2499534000BD0FE6 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
 		289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLConvertible.swift"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		AC65B0622027CCD1001FD4EB /* MonetTests */ = {
 			isa = PBXGroup;
 			children = (
+				28093D23261F7D9100822896 /* MNTErrorTests.swift */,
 				289698E4249C33AB00BD0FE6 /* URLTests.swift */,
 				289698E0249C221400BD0FE6 /* URLComponentsTest.swift */,
 				289698DE249BEC0D00BD0FE6 /* StringTests.swift */,
@@ -418,6 +421,7 @@
 			files = (
 				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
 				289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */,
+				28093D24261F7D9100822896 /* MNTErrorTests.swift in Sources */,
 				289698E5249C33AB00BD0FE6 /* URLTests.swift in Sources */,
 				AC90E60D20282D390062802C /* RequestTests.swift in Sources */,
 				289698E1249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,

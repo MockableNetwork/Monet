@@ -13,53 +13,6 @@ public protocol Describable {
 }
 
 public enum MNTError: Error {
-    public enum InvalidResponseReason: Error {
-        case badRequest
-        case unauthorized
-        case forbidden
-        case notFound
-        case methodNotAllowed
-        case requestTimeout
-        case unprocessableEntity
-        case tooManyRequests
-        case internalServerError
-        case serviceUnavailable
-        case gatewayTimeout
-        case other(error: Error)
-
-        init(code: Int) {
-            switch code {
-            case 400:
-                self = .badRequest
-            case 401:
-                self = .unauthorized
-            case 403:
-                self = .forbidden
-            case 404:
-                self = .notFound
-            case 405:
-                self = .methodNotAllowed
-            case 408:
-                self = .requestTimeout
-            case 422:
-                self = .unprocessableEntity
-            case 429:
-                self = .tooManyRequests
-            case 500:
-                self = .internalServerError
-            case 503:
-                self = .serviceUnavailable
-            case 504:
-                self = .gatewayTimeout
-            default:
-                let error = NSError(domain: "co.monet",
-                                    code: code,
-                                    userInfo: [NSLocalizedDescriptionKey: "Something went wrong. (\(code))"])
-                self = .other(error: error)
-            }
-        }
-    }
-
     public enum MockFailReason: Error {
         case invalidData
         case noMock
@@ -68,7 +21,7 @@ public enum MNTError: Error {
 
     case invalidUrl(url: URLConvertible)
     case requestFail
-    case invalidResponse(reason: InvalidResponseReason)
+    case invalidResponse(reason: Error)
     case parseFail
     case mockFail(reason: MockFailReason)
     case other(error: Error)
@@ -80,21 +33,19 @@ extension MNTError: LocalizedError {
         case let .invalidUrl(url):
             return "\(url) is not a valid URL."
         case let .invalidResponse(reason):
+            return reason.localizedDescription
+        case .parseFail:
+            return "Something went wrong during parse process."
+        case .requestFail:
+            return "Request creation failed."
+        case let .mockFail(reason):
             return reason.description
         case .other(let error):
             return error.localizedDescription
-        case .parseFail:
-            return "Something went wrong while parsing data."
-        case .requestFail:
-            return "Request creation was not possible."
-        case let .mockFail(reason):
-            return reason.description
         }
     }
 
-    public var localizedDescription: String {
-        return errorDescription ?? "Unknown error."
-    }
+    public var localizedDescription: String { errorDescription! }
 }
 
 extension MNTError.MockFailReason: Describable {
@@ -106,37 +57,6 @@ extension MNTError.MockFailReason: Describable {
             return "\(file) is unreadable or unreachable"
         case .noMock:
             return "Mock has not been specified."
-        }
-    }
-}
-
-extension MNTError.InvalidResponseReason: Describable {
-    public var description: String {
-        switch self {
-        case .badRequest:
-            return "Bad Request"
-        case .unauthorized:
-            return "Unauthorized"
-        case .forbidden:
-            return "Forbidden"
-        case .notFound:
-            return "Not Found"
-        case .methodNotAllowed:
-            return "Method Not Allowed"
-        case .requestTimeout:
-            return "Request Timeout"
-        case .unprocessableEntity:
-            return "Unprocessable Entity"
-        case .tooManyRequests:
-            return "Too Many Requests"
-        case .internalServerError:
-            return "Internal Server Error"
-        case .serviceUnavailable:
-            return "Service Unavailable"
-        case .gatewayTimeout:
-            return "Gateway Timeout"
-        case let .other(error):
-            return error.localizedDescription
         }
     }
 }
