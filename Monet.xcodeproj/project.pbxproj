@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28093CF3261E776800822896 /* MNTMockableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093CF2261E776800822896 /* MNTMockableResponse.swift */; };
+		28093CF4261E776800822896 /* MNTMockableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093CF2261E776800822896 /* MNTMockableResponse.swift */; };
+		28093CFA261E79B800822896 /* MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093CF9261E79B800822896 /* MNTMockableResponseBody.swift */; };
+		28093CFB261E79B800822896 /* MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093CF9261E79B800822896 /* MNTMockableResponseBody.swift */; };
+		28093D05261E7A0A00822896 /* String+MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D04261E7A0A00822896 /* String+MNTMockableResponseBody.swift */; };
+		28093D06261E7A0A00822896 /* String+MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D04261E7A0A00822896 /* String+MNTMockableResponseBody.swift */; };
+		28093D0C261E7B8A00822896 /* Data+MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D0B261E7B8A00822896 /* Data+MNTMockableResponseBody.swift */; };
+		28093D0D261E7B8A00822896 /* Data+MNTMockableResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D0B261E7B8A00822896 /* Data+MNTMockableResponseBody.swift */; };
+		28093D13261E7BE000822896 /* MNTMockFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D12261E7BE000822896 /* MNTMockFile.swift */; };
+		28093D14261E7BE000822896 /* MNTMockFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D12261E7BE000822896 /* MNTMockFile.swift */; };
+		28093D24261F7D9100822896 /* MNTErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D23261F7D9100822896 /* MNTErrorTests.swift */; };
+		289698CC2499534000BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
+		289698CD2499534400BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
+		289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
+		289698D3249BC4EB00BD0FE6 /* String+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */; };
+		289698D4249BCCDB00BD0FE6 /* String+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */; };
+		289698D5249BCCDF00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
+		289698D9249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D8249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift */; };
+		289698DA249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D8249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift */; };
+		289698DC249BCDE400BD0FE6 /* URL+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */; };
+		289698DD249BCDE400BD0FE6 /* URL+URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */; };
+		289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DE249BEC0D00BD0FE6 /* StringTests.swift */; };
+		289698E1249C221400BD0FE6 /* URLComponentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E0249C221400BD0FE6 /* URLComponentsTest.swift */; };
+		289698E2249C221400BD0FE6 /* URLComponentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E0249C221400BD0FE6 /* URLComponentsTest.swift */; };
+		289698E3249C222400BD0FE6 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698DE249BEC0D00BD0FE6 /* StringTests.swift */; };
+		289698E5249C33AB00BD0FE6 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E4249C33AB00BD0FE6 /* URLTests.swift */; };
+		289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E4249C33AB00BD0FE6 /* URLTests.swift */; };
+		289698E8249C352700BD0FE6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E7249C352700BD0FE6 /* HTTPMethod.swift */; };
+		289698E9249C352700BD0FE6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E7249C352700BD0FE6 /* HTTPMethod.swift */; };
 		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
@@ -39,6 +68,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28093CF2261E776800822896 /* MNTMockableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTMockableResponse.swift; sourceTree = "<group>"; };
+		28093CF9261E79B800822896 /* MNTMockableResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTMockableResponseBody.swift; sourceTree = "<group>"; };
+		28093D04261E7A0A00822896 /* String+MNTMockableResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MNTMockableResponseBody.swift"; sourceTree = "<group>"; };
+		28093D0B261E7B8A00822896 /* Data+MNTMockableResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MNTMockableResponseBody.swift"; sourceTree = "<group>"; };
+		28093D12261E7BE000822896 /* MNTMockFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTMockFile.swift; sourceTree = "<group>"; };
+		28093D23261F7D9100822896 /* MNTErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTErrorTests.swift; sourceTree = "<group>"; };
+		289698CB2499534000BD0FE6 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
+		289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLConvertible.swift"; sourceTree = "<group>"; };
+		289698D8249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+URLConvertible.swift"; sourceTree = "<group>"; };
+		289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+URLConvertible.swift"; sourceTree = "<group>"; };
+		289698DE249BEC0D00BD0FE6 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		289698E0249C221400BD0FE6 /* URLComponentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTest.swift; sourceTree = "<group>"; };
+		289698E4249C33AB00BD0FE6 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		289698E7249C352700BD0FE6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -113,8 +157,19 @@
 			children = (
 				AC90E602202829970062802C /* Configuration files */,
 				AC65B0152027BBCC001FD4EB /* Monet.h */,
+				289698E7249C352700BD0FE6 /* HTTPMethod.swift */,
 				AC65B04A2027C51F001FD4EB /* Monet.swift */,
 				AC90E60420282A0D0062802C /* Request.swift */,
+				289698CB2499534000BD0FE6 /* Errors.swift */,
+				289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */,
+				289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */,
+				289698D8249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift */,
+				289698DB249BCDE400BD0FE6 /* URL+URLConvertible.swift */,
+				28093CF2261E776800822896 /* MNTMockableResponse.swift */,
+				28093CF9261E79B800822896 /* MNTMockableResponseBody.swift */,
+				28093D04261E7A0A00822896 /* String+MNTMockableResponseBody.swift */,
+				28093D0B261E7B8A00822896 /* Data+MNTMockableResponseBody.swift */,
+				28093D12261E7BE000822896 /* MNTMockFile.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -122,6 +177,10 @@
 		AC65B0622027CCD1001FD4EB /* MonetTests */ = {
 			isa = PBXGroup;
 			children = (
+				28093D23261F7D9100822896 /* MNTErrorTests.swift */,
+				289698E4249C33AB00BD0FE6 /* URLTests.swift */,
+				289698E0249C221400BD0FE6 /* URLComponentsTest.swift */,
+				289698DE249BEC0D00BD0FE6 /* StringTests.swift */,
 				AC90E60C20282D390062802C /* RequestTests.swift */,
 				AC65B0632027CCD1001FD4EB /* MonetTests.swift */,
 				AC65B0652027CCD1001FD4EB /* Info-iOS.plist */,
@@ -239,13 +298,14 @@
 		AC65B0072027B8DC001FD4EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MNT;
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Monet;
 				TargetAttributes = {
 					AC65B0112027BBCC001FD4EB = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 					};
 					AC65B02E2027BC11001FD4EB = {
@@ -268,6 +328,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AC65B0062027B8DC001FD4EB;
 			productRefGroup = AC65B0132027BBCC001FD4EB /* Products */;
@@ -318,8 +379,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28093D0C261E7B8A00822896 /* Data+MNTMockableResponseBody.swift in Sources */,
 				AC90E60820282C570062802C /* Request.swift in Sources */,
+				289698D9249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */,
+				289698D3249BC4EB00BD0FE6 /* String+URLConvertible.swift in Sources */,
+				289698CC2499534000BD0FE6 /* Errors.swift in Sources */,
+				289698E8249C352700BD0FE6 /* HTTPMethod.swift in Sources */,
+				28093D13261E7BE000822896 /* MNTMockFile.swift in Sources */,
+				289698DC249BCDE400BD0FE6 /* URL+URLConvertible.swift in Sources */,
+				28093CF3261E776800822896 /* MNTMockableResponse.swift in Sources */,
+				28093CFA261E79B800822896 /* MNTMockableResponseBody.swift in Sources */,
 				AC90E60A20282C720062802C /* Monet.swift in Sources */,
+				28093D05261E7A0A00822896 /* String+MNTMockableResponseBody.swift in Sources */,
+				289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,8 +399,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28093D0D261E7B8A00822896 /* Data+MNTMockableResponseBody.swift in Sources */,
+				289698D4249BCCDB00BD0FE6 /* String+URLConvertible.swift in Sources */,
+				289698DA249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */,
 				AC90E60720282C560062802C /* Request.swift in Sources */,
+				289698CD2499534400BD0FE6 /* Errors.swift in Sources */,
+				289698E9249C352700BD0FE6 /* HTTPMethod.swift in Sources */,
+				28093D14261E7BE000822896 /* MNTMockFile.swift in Sources */,
+				289698DD249BCDE400BD0FE6 /* URL+URLConvertible.swift in Sources */,
+				28093CF4261E776800822896 /* MNTMockableResponse.swift in Sources */,
+				28093CFB261E79B800822896 /* MNTMockableResponseBody.swift in Sources */,
 				AC90E60B20282C720062802C /* Monet.swift in Sources */,
+				28093D06261E7A0A00822896 /* String+MNTMockableResponseBody.swift in Sources */,
+				289698D5249BCCDF00BD0FE6 /* URLConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
+				289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */,
+				28093D24261F7D9100822896 /* MNTErrorTests.swift in Sources */,
+				289698E5249C33AB00BD0FE6 /* URLTests.swift in Sources */,
 				AC90E60D20282D390062802C /* RequestTests.swift in Sources */,
+				289698E1249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289698E2249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,
 				AC65B07B2027CD8F001FD4EB /* MonetTests.swift in Sources */,
+				289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */,
+				289698E3249C222400BD0FE6 /* StringTests.swift in Sources */,
 				AC90E60E20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,14 +459,66 @@
 		AC65B00B2027B8DC001FD4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		AC65B00C2027B8DC001FD4EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 			};
@@ -412,7 +554,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -450,7 +592,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -487,7 +629,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -517,7 +659,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -555,7 +697,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -631,7 +773,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;

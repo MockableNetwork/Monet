@@ -7,49 +7,14 @@
 
 import Foundation
 
-public enum HTTPMethod {
-    case get, put, patch, post, delete
-
-    public func getValue() -> String {
-        switch self {
-        case .get:
-            return "GET"
-        case .put:
-            return "PUT"
-        case .patch:
-            return "PATCH"
-        case .post:
-            return "POST"
-        case .delete:
-            return "DELETE"
-        }
-    }
-}
-
 public typealias Headers = [String: String]
-
 public typealias Parameters = [String: Any]
-
 public typealias ResponseResult = [String: Any]
-
-public protocol URLString {
-    func toURL() -> URL?
-}
-
-extension String: URLString {
-    public func toURL() -> URL? {
-        if let url = URL(string: self) {
-            return url
-        } else {
-            return nil
-        }
-    }
-}
 
 open class NetworkRequest {
     public static let shared: NetworkRequest = { return NetworkRequest() }()
 
-    func request(from urlString: URLString,
+    func request(from urlString: URLConvertible,
                  using method: HTTPMethod = .get,
                  sending headers: Headers? = nil,
                  and parameters: Parameters? = nil,
@@ -57,7 +22,7 @@ open class NetworkRequest {
                  success: @escaping(Data, URLResponse) -> Void,
                  fail: @escaping(Error) -> Void) {
 
-        if let url = urlString.toURL() {
+        if let url = try? urlString.toUrl() {
             var urlRequest: URLRequest = URLRequest(url: url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: timeout)
 
             if let headers = headers {
