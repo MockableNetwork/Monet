@@ -18,14 +18,18 @@ class MNTHTTPURLResponseMockTests: XCTestCase {
                                            statusCode: 404,
                                            httpVersion: "HTTP/1.1",
                                            headerFields: [:])
+
+        let mockResponse = try! response.httpResponse()
+        XCTAssertNotNil(mockResponse)
+        XCTAssertEqual(httpResponse?.statusCode, mockResponse?.statusCode)
+        XCTAssertEqual(httpResponse?.url, mockResponse?.url)
+        XCTAssertEqual(httpResponse?.allHeaderFields.count, mockResponse?.allHeaderFields.count)
+
         do {
-            let mockResponse = try response.httpResponse()
-            XCTAssertNotNil(mockResponse)
-            XCTAssertEqual(httpResponse?.statusCode, mockResponse?.statusCode)
-            XCTAssertEqual(httpResponse?.url, mockResponse?.url)
-            XCTAssertEqual(httpResponse?.allHeaderFields.count, mockResponse?.allHeaderFields.count)
+            _ = try MNTHTTPURLResponseMock.init(url: "bad url", status: .notFound).httpResponse()
+            XCTFail("An error should have been catched")
         } catch {
-            XCTFail()
+            XCTAssertEqual(error.localizedDescription, "bad url is not a valid URL.")
         }
     }
 
@@ -36,15 +40,11 @@ class MNTHTTPURLResponseMockTests: XCTestCase {
                                            statusCode: 404,
                                            httpVersion: "HTTP/1.1",
                                            headerFields: [:])
-        do {
-            let mockResponse = try response.httpResponse()
-            XCTAssertNotNil(mockResponse)
-            XCTAssertEqual(httpResponse?.statusCode, mockResponse?.statusCode)
-            XCTAssertEqual(httpResponse?.url, mockResponse?.url)
-            XCTAssertEqual(httpResponse?.allHeaderFields.count, mockResponse?.allHeaderFields.count)
-        } catch {
-            XCTFail()
-        }
+        let mockResponse = try! response.httpResponse()
+        XCTAssertNotNil(mockResponse)
+        XCTAssertEqual(httpResponse?.statusCode, mockResponse?.statusCode)
+        XCTAssertEqual(httpResponse?.url, mockResponse?.url)
+        XCTAssertEqual(httpResponse?.allHeaderFields.count, mockResponse?.allHeaderFields.count)
     }
 
     func testRequestStatus() {
