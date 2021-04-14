@@ -41,6 +41,7 @@
 		289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E4249C33AB00BD0FE6 /* URLTests.swift */; };
 		289698E8249C352700BD0FE6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E7249C352700BD0FE6 /* HTTPMethod.swift */; };
 		289698E9249C352700BD0FE6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E7249C352700BD0FE6 /* HTTPMethod.swift */; };
+		28DC3907262642300039C41A /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DC3906262642300039C41A /* Mock.json */; };
 		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
@@ -90,6 +91,7 @@
 		289698E0249C221400BD0FE6 /* URLComponentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTest.swift; sourceTree = "<group>"; };
 		289698E4249C33AB00BD0FE6 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		289698E7249C352700BD0FE6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		28DC3906262642300039C41A /* Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
 		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28DC39052626421D0039C41A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				28DC3906262642300039C41A /* Mock.json */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
 		AC65B0062027B8DC001FD4EB = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		AC65B0462027BD37001FD4EB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				28DC39052626421D0039C41A /* Mocks */,
 				AC90E602202829970062802C /* Configuration files */,
 				AC65B0152027BBCC001FD4EB /* Monet.h */,
 				289698E7249C352700BD0FE6 /* HTTPMethod.swift */,
@@ -357,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DC3907262642300039C41A /* Mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
