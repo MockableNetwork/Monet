@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		28093D4026210BD700822896 /* MNTHTTPURLResponseMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D3A26210BAC00822896 /* MNTHTTPURLResponseMockTests.swift */; };
 		28093D4126210BE000822896 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D312620CE4800822896 /* DataTests.swift */; };
 		28093D4626210BE500822896 /* MNTErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D23261F7D9100822896 /* MNTErrorTests.swift */; };
+		28106D6126275A1400BF2CDF /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DC3906262642300039C41A /* Mock.json */; };
+		28106D6626275A1500BF2CDF /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DC3906262642300039C41A /* Mock.json */; platformFilter = ios; };
 		289698CC2499534000BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698CD2499534400BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
@@ -41,7 +43,8 @@
 		289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E4249C33AB00BD0FE6 /* URLTests.swift */; };
 		289698E8249C352700BD0FE6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E7249C352700BD0FE6 /* HTTPMethod.swift */; };
 		289698E9249C352700BD0FE6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698E7249C352700BD0FE6 /* HTTPMethod.swift */; };
-		28DC3907262642300039C41A /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DC3906262642300039C41A /* Mock.json */; };
+		28DC390D262645F20039C41A /* MNTMockFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC390C262645F10039C41A /* MNTMockFileTests.swift */; };
+		28DC390E262645F20039C41A /* MNTMockFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC390C262645F10039C41A /* MNTMockFileTests.swift */; };
 		AC65B0232027BBCD001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0472027C02C001FD4EB /* Monet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B0152027BBCC001FD4EB /* Monet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65B0632027CCD1001FD4EB /* MonetTests.swift */; };
@@ -92,6 +95,7 @@
 		289698E4249C33AB00BD0FE6 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		289698E7249C352700BD0FE6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		28DC3906262642300039C41A /* Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
+		28DC390C262645F10039C41A /* MNTMockFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTMockFileTests.swift; sourceTree = "<group>"; };
 		AC65B0122027BBCC001FD4EB /* Monet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC65B0152027BBCC001FD4EB /* Monet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monet.h; sourceTree = "<group>"; };
 		AC65B0162027BBCC001FD4EB /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -141,7 +145,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28DC39052626421D0039C41A /* Mocks */ = {
+		28106D382627583A00BF2CDF /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				28DC3906262642300039C41A /* Mock.json */,
@@ -172,7 +176,6 @@
 		AC65B0462027BD37001FD4EB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28DC39052626421D0039C41A /* Mocks */,
 				AC90E602202829970062802C /* Configuration files */,
 				AC65B0152027BBCC001FD4EB /* Monet.h */,
 				289698E7249C352700BD0FE6 /* HTTPMethod.swift */,
@@ -195,6 +198,7 @@
 		AC65B0622027CCD1001FD4EB /* MonetTests */ = {
 			isa = PBXGroup;
 			children = (
+				28106D382627583A00BF2CDF /* Mocks */,
 				28093D3A26210BAC00822896 /* MNTHTTPURLResponseMockTests.swift */,
 				28093D23261F7D9100822896 /* MNTErrorTests.swift */,
 				289698E4249C33AB00BD0FE6 /* URLTests.swift */,
@@ -205,6 +209,7 @@
 				AC65B0652027CCD1001FD4EB /* Info-iOS.plist */,
 				AC65B0742027CD1C001FD4EB /* Info-macOS.plist */,
 				28093D312620CE4800822896 /* DataTests.swift */,
+				28DC390C262645F10039C41A /* MNTMockFileTests.swift */,
 			);
 			path = MonetTests;
 			sourceTree = "<group>";
@@ -368,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28DC3907262642300039C41A /* Mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28106D6626275A1500BF2CDF /* Mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28106D6126275A1400BF2CDF /* Mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +448,7 @@
 			files = (
 				28093D3B26210BAC00822896 /* MNTHTTPURLResponseMockTests.swift in Sources */,
 				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
+				28DC390D262645F20039C41A /* MNTMockFileTests.swift in Sources */,
 				289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */,
 				28093D322620CE4800822896 /* DataTests.swift in Sources */,
 				28093D24261F7D9100822896 /* MNTErrorTests.swift in Sources */,
@@ -457,6 +464,7 @@
 			files = (
 				289698E2249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,
 				AC65B07B2027CD8F001FD4EB /* MonetTests.swift in Sources */,
+				28DC390E262645F20039C41A /* MNTMockFileTests.swift in Sources */,
 				28093D4626210BE500822896 /* MNTErrorTests.swift in Sources */,
 				28093D4126210BE000822896 /* DataTests.swift in Sources */,
 				28093D4026210BD700822896 /* MNTHTTPURLResponseMockTests.swift in Sources */,
@@ -609,7 +617,11 @@
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
@@ -678,13 +690,18 @@
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
 				PRODUCT_NAME = Monet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -753,7 +770,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -823,14 +844,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.Monet;
 				PRODUCT_NAME = Monet;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -889,7 +915,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "MonetTests/Info-iOs.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
@@ -948,12 +978,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "MonetTests/Info-iOs.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1013,7 +1048,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "MonetTests/Info-macOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1073,13 +1112,18 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "MonetTests/Info-macOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.MonetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
