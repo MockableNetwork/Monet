@@ -1,5 +1,5 @@
 //
-//  MNTMockFile.swift
+//  MNTFileMock.swift
 //  Monet
 //
 //  Created by Francisco Javier Chacon de Dios on 07/04/21.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MNTMockFile: MNTMockableResponseBody {
+class MNTFileMock: MNTMockableResponseBody {
     var filename: String
     var fileExtension: String
     var bundle: Bundle

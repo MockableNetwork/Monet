@@ -9,9 +9,9 @@
 import XCTest
 @testable import Monet
 
-class MNTMockFileTests: XCTestCase {
+class MNTFileMockTests: XCTestCase {
     func testInit() {
-        let mock = MNTMockFile(filename: "File", fileExtension: "json")
+        let mock = MNTFileMock(filename: "File", fileExtension: "json")
 
         XCTAssertEqual(mock.bundle, .main)
         XCTAssertEqual(mock.filename, "File")
@@ -21,9 +21,9 @@ class MNTMockFileTests: XCTestCase {
     }
 
     func testPath() {
-        let badMock = MNTMockFile(filename: "Mock",
+        let badMock = MNTFileMock(filename: "Mock",
                                   fileExtension: "json")
-        let realMock = MNTMockFile(filename: "Mock",
+        let realMock = MNTFileMock(filename: "Mock",
                                    fileExtension: "json",
                                    bundle: Bundle(for: type(of: self)))
 
@@ -32,7 +32,7 @@ class MNTMockFileTests: XCTestCase {
     }
 
     func testToDataFailure() {
-        let mock = MNTMockFile(filename: "Mock",
+        let mock = MNTFileMock(filename: "Mock",
                                fileExtension: "json")
         do {
             _ = try mock.toData()
@@ -46,7 +46,7 @@ class MNTMockFileTests: XCTestCase {
     }
 
     func testToDataSuccess() {
-        let mock = MNTMockFile(filename: "Mock",
+        let mock = MNTFileMock(filename: "Mock",
                                fileExtension: "json",
                                bundle: Bundle(for: type(of: self)))
 
