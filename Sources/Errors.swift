@@ -17,6 +17,7 @@ public enum MNTError: Error {
         case invalidData
         case noMock
         case unreadableMockFile(file: String)
+        case notPresentInBundle(file: String)
     }
 
     case invalidUrl(url: URLConvertible)
@@ -39,24 +40,24 @@ extension MNTError: LocalizedError {
         case .requestFail:
             return "Request creation failed."
         case let .mockFail(reason):
-            return reason.description
+            return reason.localizedDescription
         case .other(let error):
             return error.localizedDescription
         }
     }
-
-    public var localizedDescription: String { errorDescription! }
 }
 
-extension MNTError.MockFailReason: Describable {
-    public var description: String {
+extension MNTError.MockFailReason: LocalizedError {
+    public var errorDescription: String? {
         switch self {
         case .invalidData:
             return "Mock data is not valid."
         case .unreadableMockFile(let file):
-            return "\(file) is unreadable or unreachable"
+            return "\(file) is unreadable."
         case .noMock:
             return "Mock has not been specified."
+        case .notPresentInBundle(let file):
+            return "\(file) is not present in specified bundle."
         }
     }
 }
