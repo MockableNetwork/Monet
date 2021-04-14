@@ -25,10 +25,10 @@ class MNTMockFile: MNTMockableResponseBody {
 
     func toData() throws -> Data {
         guard let path = path, path.isEmpty == false else {
-            throw MNTError.MockFailReason.unreadableMockFile(file: fullName)
+            throw MNTError.mockFail(reason: .notPresentInBundle(file: fullName))
         }
-        guard let data = try? Data(contentsOf: try path.toUrl()) else {
-            throw MNTError.MockFailReason.unreadableMockFile(file: fullName)
+        guard let data = FileManager.default.contents(atPath: path) else {
+            throw MNTError.mockFail(reason: .unreadableMockFile(file: fullName))
         }
 
         return data
