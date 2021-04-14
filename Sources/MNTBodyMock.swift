@@ -1,5 +1,5 @@
 //
-//  Data+MNTMockableResponseBody.swift
+//  MNTBodyMock.swift
 //  Monet
 //
 //  Created by Francisco Javier Chacon de Dios on 07/04/21.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-extension Data: MNTMockableResponseBody {
-    func toData() throws -> Data {
-        return self
-    }
+protocol MNTBodyMock {
+    func toData() throws -> Data
 }

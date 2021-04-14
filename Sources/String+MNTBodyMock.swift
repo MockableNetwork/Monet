@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String: MNTMockableResponseBody {
+extension String: MNTBodyMock {
     func toData() throws -> Data {
         if let data = data(using: .utf8) {
             return data

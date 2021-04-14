@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MNTFileMock: MNTMockableResponseBody {
+class MNTFileMock: MNTBodyMock {
     var filename: String
     var fileExtension: String
     var bundle: Bundle
