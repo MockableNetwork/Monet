@@ -25,8 +25,10 @@
 		28093D4626210BE500822896 /* MNTErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28093D23261F7D9100822896 /* MNTErrorTests.swift */; };
 		28106D6126275A1400BF2CDF /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DC3906262642300039C41A /* Mock.json */; };
 		28106D6626275A1500BF2CDF /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DC3906262642300039C41A /* Mock.json */; platformFilter = ios; };
-		28106D832627781000BF2CDF /* MNTJSONStringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28106D822627781000BF2CDF /* MNTJSONStringMock.swift */; };
-		28106D842627781000BF2CDF /* MNTJSONStringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28106D822627781000BF2CDF /* MNTJSONStringMock.swift */; };
+		28106DB626289F9800BF2CDF /* MNTJSONStringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28106D822627781000BF2CDF /* MNTJSONStringMock.swift */; };
+		28106DBB26289F9800BF2CDF /* MNTJSONStringMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28106D822627781000BF2CDF /* MNTJSONStringMock.swift */; };
+		28106DC12628A69100BF2CDF /* MNTJSONStringMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28106DC02628A69100BF2CDF /* MNTJSONStringMockTests.swift */; };
+		28106DC22628A69100BF2CDF /* MNTJSONStringMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28106DC02628A69100BF2CDF /* MNTJSONStringMockTests.swift */; };
 		289698CC2499534000BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698CD2499534400BD0FE6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698CB2499534000BD0FE6 /* Errors.swift */; };
 		289698D1249AC5BA00BD0FE6 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */; };
@@ -88,6 +90,7 @@
 		28093D312620CE4800822896 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
 		28093D3A26210BAC00822896 /* MNTHTTPURLResponseMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTHTTPURLResponseMockTests.swift; sourceTree = "<group>"; };
 		28106D822627781000BF2CDF /* MNTJSONStringMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTJSONStringMock.swift; sourceTree = "<group>"; };
+		28106DC02628A69100BF2CDF /* MNTJSONStringMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTJSONStringMockTests.swift; sourceTree = "<group>"; };
 		289698CB2499534000BD0FE6 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		289698D0249AC5BA00BD0FE6 /* URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
 		289698D2249BC4EB00BD0FE6 /* String+URLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLConvertible.swift"; sourceTree = "<group>"; };
@@ -214,6 +217,7 @@
 				AC65B0742027CD1C001FD4EB /* Info-macOS.plist */,
 				28093D312620CE4800822896 /* DataTests.swift */,
 				28DC390C262645F10039C41A /* MNTFileMockTests.swift */,
+				28106DC02628A69100BF2CDF /* MNTJSONStringMockTests.swift */,
 			);
 			path = MonetTests;
 			sourceTree = "<group>";
@@ -414,6 +418,7 @@
 				AC90E60820282C570062802C /* Request.swift in Sources */,
 				289698D9249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */,
 				289698D3249BC4EB00BD0FE6 /* String+URLConvertible.swift in Sources */,
+				28106DBB26289F9800BF2CDF /* MNTJSONStringMock.swift in Sources */,
 				289698CC2499534000BD0FE6 /* Errors.swift in Sources */,
 				289698E8249C352700BD0FE6 /* HTTPMethod.swift in Sources */,
 				28093D13261E7BE000822896 /* MNTFileMock.swift in Sources */,
@@ -434,6 +439,7 @@
 				289698D4249BCCDB00BD0FE6 /* String+URLConvertible.swift in Sources */,
 				289698DA249BCD9000BD0FE6 /* URLComponents+URLConvertible.swift in Sources */,
 				AC90E60720282C560062802C /* Request.swift in Sources */,
+				28106DB626289F9800BF2CDF /* MNTJSONStringMock.swift in Sources */,
 				289698CD2499534400BD0FE6 /* Errors.swift in Sources */,
 				289698E9249C352700BD0FE6 /* HTTPMethod.swift in Sources */,
 				28093D14261E7BE000822896 /* MNTFileMock.swift in Sources */,
@@ -454,11 +460,11 @@
 				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
 				28DC390D262645F20039C41A /* MNTFileMockTests.swift in Sources */,
 				289698DF249BEC0D00BD0FE6 /* StringTests.swift in Sources */,
+				28106DC12628A69100BF2CDF /* MNTJSONStringMockTests.swift in Sources */,
 				28093D322620CE4800822896 /* DataTests.swift in Sources */,
 				28093D24261F7D9100822896 /* MNTErrorTests.swift in Sources */,
 				289698E5249C33AB00BD0FE6 /* URLTests.swift in Sources */,
 				AC90E60D20282D390062802C /* RequestTests.swift in Sources */,
-				28106D832627781000BF2CDF /* MNTJSONStringMock.swift in Sources */,
 				289698E1249C221400BD0FE6 /* URLComponentsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,11 +477,11 @@
 				AC65B07B2027CD8F001FD4EB /* MonetTests.swift in Sources */,
 				28DC390E262645F20039C41A /* MNTFileMockTests.swift in Sources */,
 				28093D4626210BE500822896 /* MNTErrorTests.swift in Sources */,
+				28106DC22628A69100BF2CDF /* MNTJSONStringMockTests.swift in Sources */,
 				28093D4126210BE000822896 /* DataTests.swift in Sources */,
 				28093D4026210BD700822896 /* MNTHTTPURLResponseMockTests.swift in Sources */,
 				289698E6249C33AB00BD0FE6 /* URLTests.swift in Sources */,
 				289698E3249C222400BD0FE6 /* StringTests.swift in Sources */,
-				28106D842627781000BF2CDF /* MNTJSONStringMock.swift in Sources */,
 				AC90E60E20282D390062802C /* RequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

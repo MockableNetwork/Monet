@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class MNTJSONStringMock: MNTBodyMock {
+    private var value: String
+
+    init(_ value: String) {
+        self.value = value
+    }
+
+    func toData() throws -> Data {
+        return try value.toData()
+    }
+}
