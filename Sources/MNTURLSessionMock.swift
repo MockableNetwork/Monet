@@ -11,13 +11,9 @@ import Foundation
 class MNTURLSessionMock: MNTMockableURLSession {
     var mocks: [URL: MNTMock] = [:]
 
-    func setMock(_ mock: MNTMock, forUrl url: URLConvertible) {
-        do {
-            let transformedUrl = try url.toUrl()
-            mocks.updateValue(mock, forKey: transformedUrl)
-        } catch {
-            print(error.localizedDescription)
-        }
+    func setMock(_ mock: MNTMock, forUrl url: URLConvertible) throws {
+        let transformedUrl = try url.toUrl()
+        mocks.updateValue(mock, forKey: transformedUrl)
     }
 
     func dataTask(request: URLRequest, _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {

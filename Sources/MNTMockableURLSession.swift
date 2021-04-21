@@ -11,7 +11,7 @@ import Foundation
 typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
 
 protocol MNTMockableURLSession {
-    func setMock(_ mock: MNTMock, forUrl url: URLConvertible)
+    func setMock(_ mock: MNTMock, forUrl url: URLConvertible) throws
     func dataTask(request: URLRequest,
                   _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask
 }
