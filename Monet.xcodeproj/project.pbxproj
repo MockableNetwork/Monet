@@ -41,6 +41,7 @@
 		286BA6DB262A08AE0058CEE9 /* MNTURLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6D9262A08AE0058CEE9 /* MNTURLSessionDataTaskMock.swift */; };
 		286BA6E5262A09670058CEE9 /* URLSessionDataTask + MNTMockableDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6E4262A09670058CEE9 /* URLSessionDataTask + MNTMockableDataTask.swift */; };
 		286BA6E6262A09670058CEE9 /* URLSessionDataTask + MNTMockableDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6E4262A09670058CEE9 /* URLSessionDataTask + MNTMockableDataTask.swift */; };
+		28942FF82630C5DA0035C17B /* MNTConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28942FF72630C5DA0035C17B /* MNTConfigurationTests.swift */; };
 		28964B4B262DEE7900CF861F /* MNTURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28964B4A262DEE7900CF861F /* MNTURLSessionMock.swift */; };
 		28964B4C262DEE7900CF861F /* MNTURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28964B4A262DEE7900CF861F /* MNTURLSessionMock.swift */; };
 		28964B52262DF2C400CF861F /* MNTMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28964B51262DF2C400CF861F /* MNTMock.swift */; };
@@ -113,6 +114,7 @@
 		286BA6D2262A08940058CEE9 /* MNTURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTURLSession.swift; sourceTree = "<group>"; };
 		286BA6D9262A08AE0058CEE9 /* MNTURLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTURLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		286BA6E4262A09670058CEE9 /* URLSessionDataTask + MNTMockableDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask + MNTMockableDataTask.swift"; sourceTree = "<group>"; };
+		28942FF72630C5DA0035C17B /* MNTConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTConfigurationTests.swift; sourceTree = "<group>"; };
 		28964B4A262DEE7900CF861F /* MNTURLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTURLSessionMock.swift; sourceTree = "<group>"; };
 		28964B51262DF2C400CF861F /* MNTMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MNTMock.swift; path = ../../../MNTMock.swift; sourceTree = "<group>"; };
 		28964B58262F939400CF861F /* MNTConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNTConfiguration.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				28DC390C262645F10039C41A /* MNTFileMockTests.swift */,
 				28106DC02628A69100BF2CDF /* MNTJSONStringMockTests.swift */,
 				2824F889262A1A8200308268 /* MNTURLSessionDataTaskMockTests.swift */,
+				28942FF72630C5DA0035C17B /* MNTConfigurationTests.swift */,
 			);
 			path = MonetTests;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28942FF82630C5DA0035C17B /* MNTConfigurationTests.swift in Sources */,
 				28093D3B26210BAC00822896 /* MNTHTTPURLResponseMockTests.swift in Sources */,
 				AC65B0642027CCD1001FD4EB /* MonetTests.swift in Sources */,
 				28DC390D262645F20039C41A /* MNTFileMockTests.swift in Sources */,
