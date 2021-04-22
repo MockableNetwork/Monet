@@ -10,11 +10,14 @@ import XCTest
 
 class URLTests: XCTestCase {
     func testToUrl() {
-        guard let url = URL(string: "www.example.com") else {
-            XCTFail("Example url is wrong")
-            return
-        }
+        let url = URL(string: "www.example.com")!
 
-        XCTAssertEqual(url, try? url.toUrl())
+        XCTAssertEqual(url, try! url.toUrl())
+    }
+
+    func testString() {
+        let url = URL(string: "www.example.com")!
+
+        XCTAssertEqual(url.toString(), "www.example.com")
     }
 }

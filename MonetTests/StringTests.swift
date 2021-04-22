@@ -20,6 +20,10 @@ class StringTests: XCTestCase {
         }
     }
 
+    func testString() {
+        XCTAssertEqual("hello".toString(), "hello")
+    }
+
     func testToData() {
         XCTAssertEqual(try "hello".toData(), "hello".data(using: .utf8)!)
     }

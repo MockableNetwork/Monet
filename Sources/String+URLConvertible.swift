@@ -9,6 +9,8 @@
 import Foundation
 
 extension String: URLConvertible {
+    public func toString() -> String { self }
+
     public func toUrl() throws -> URL {
         guard let url = URL(string: self) else { throw MNTError.invalidUrl(url: self) }
 
