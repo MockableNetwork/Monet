@@ -14,18 +14,19 @@ class MNTURLSessionMock: MNTMockableURLSession {
     func setMock(_ mock: MNTMock) {
         if mocks.contains(mock) {
             let index = mocks.firstIndex(of: mock)!
-            mocks[index] = mock
+            mocks.remove(at: index)
         }
         mocks.append(mock)
     }
 
-    func dataTask(request: URLRequest, _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {
-        if let url = request.url {
-            return MNTURLSessionDataTaskMock(mock: mocks.first(where: { url.toString() == $0.urlConvertible.toString() }),
-                                             completionHandler: completionHandler)
-
+    func dataTask(request: URLRequest,
+                  _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {
+        let predicate: (MNTMock) -> Bool = { mock in
+            request.url!.toString() == mock.urlConvertible.toString() &&
+                request.httpMethod == mock.method.getValue()
         }
-        return MNTURLSessionDataTaskMock(mock: nil,
+        return MNTURLSessionDataTaskMock(mock: mocks.first(where: predicate),
                                          completionHandler: completionHandler)
+
     }
 }
