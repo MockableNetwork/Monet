@@ -32,6 +32,35 @@ class MNTMockTests: XCTestCase {
         XCTAssertEqual(mock.urlConvertible.toString(), "www.test.com")
     }
 
+    func testHTTPResponse() {
+        let mock = MNTMock(body: "",
+                           error: nil,
+                           statusCode: 300,
+                           urlConvertible: "www.test.com",
+                           method: .get)
+        do {
+            let response = try mock.httpResponse()
+            XCTAssertEqual(response?.url?.toString(), "www.test.com")
+        } catch {
+            XCTFail()
+        }
+    }
+
+    func testHTTPResponseFail() {
+        let mock = MNTMock(body: "",
+                           error: nil,
+                           statusCode: 300,
+                           urlConvertible: "www.bad url.com",
+                           method: .get)
+        do {
+            _ = try mock.httpResponse()
+            XCTFail()
+        } catch {
+            XCTAssertEqual(error.localizedDescription,
+                           MNTError.invalidUrl(url: "www.bad url.com").localizedDescription)
+        }
+    }
+
     func testRequestStatus() {
         XCTAssertEqual(MNTMock.RequestStatus.success.code, 200)
         XCTAssertEqual(MNTMock.RequestStatus.created.code, 201)
