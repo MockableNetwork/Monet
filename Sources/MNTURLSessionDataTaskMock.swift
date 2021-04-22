@@ -28,7 +28,7 @@ class MNTURLSessionDataTaskMock: MNTMockableDataTask {
 
         do {
             let data = try mock.body.toData()
-            let response = try mock.urlResponse.httpResponse()
+            let response = try mock.httpResponse()
             completionHandler(data, response, mock.error)
         } catch {
             completionHandler(nil, nil, error)

@@ -30,7 +30,10 @@ class MNTURLSessionDataTaskMockTests: XCTestCase {
         let dataTaskExpectation = expectation(description: "Data Task Response")
         let mock = MNTMock(body: MNTJSONStringMock("{\"project\": \"Monet\"}"),
                            error: nil,
-                           urlResponse: .init(url: "www.bad url.com", status: .success))
+                           status: .success,
+                           urlConvertible: "www.bad url.com",
+                           method: .get)
+
         let dataTask = MNTURLSessionDataTaskMock(mock: mock) { (_, _, error) in
             XCTAssertEqual(error?.localizedDescription,
                            MNTError.invalidUrl(url: "www.bad url.com").localizedDescription)
@@ -49,9 +52,11 @@ class MNTURLSessionDataTaskMockTests: XCTestCase {
         let dataTaskExpectation = expectation(description: "Data Task Response")
         let mock = MNTMock(body: MNTFileMock(filename: "File",
                                              fileExtension: "json",
-                                             bundle: Bundle(for: type(of: self))),
+                                             bundle: .init(for: type(of: self))),
                            error: nil,
-                           urlResponse: .init(url: "www.test.com", status: .success))
+                           status: .success,
+                           urlConvertible: "www.test.com",
+                           method: .get)
         let dataTask = MNTURLSessionDataTaskMock(mock: mock) { (_, _, error) in
             XCTAssertEqual(error?.localizedDescription,
                            MNTError.mockFail(reason: .notPresentInBundle(file: "File.json")).localizedDescription)
@@ -70,9 +75,11 @@ class MNTURLSessionDataTaskMockTests: XCTestCase {
         let dataTaskExpectation = expectation(description: "Data Task Response")
         let mock = MNTMock(body: MNTFileMock(filename: "Mock",
                                              fileExtension: "json",
-                                             bundle: Bundle(for: type(of: self))),
+                                             bundle: .init(for: type(of: self))),
                            error: nil,
-                           urlResponse: .init(url: "www.test.com", status: .success))
+                           status: .success,
+                           urlConvertible: "www.test.com",
+                           method: .get)
         let dataTask = MNTURLSessionDataTaskMock(mock: mock) { (data, response, error) in
             XCTAssertNotNil(data)
             XCTAssertEqual(String(data: data ?? Data(), encoding: .utf8),
@@ -95,7 +102,9 @@ class MNTURLSessionDataTaskMockTests: XCTestCase {
         let dataTaskExpectation = expectation(description: "Data Task Response")
         let mock = MNTMock(body: MNTJSONStringMock("{\"project\": \"Monet\"}"),
                            error: nil,
-                           urlResponse: .init(url: "www.test.com", status: .success))
+                           status: .success,
+                           urlConvertible: "www.test.com",
+                           method: .get)
         let dataTask = MNTURLSessionDataTaskMock(mock: mock) { (data, response, error) in
             XCTAssertNotNil(data)
             XCTAssertEqual(String(data: data ?? Data(), encoding: .utf8),

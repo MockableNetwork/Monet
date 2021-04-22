@@ -9,23 +9,19 @@
 import Foundation
 
 class MNTURLSessionMock: MNTMockableURLSession {
-    var mocks: [URL: MNTMock] = [:]
+    var mocks: [MNTMock] = []
 
-    func setMock(_ mock: MNTMock, forUrl url: URLConvertible) throws {
-        let transformedUrl = try url.toUrl()
-        mocks.updateValue(mock, forKey: transformedUrl)
+    func setMock(_ mock: MNTMock) {
+        if mocks.contains(mock) {
+            let index = mocks.firstIndex(of: mock)!
+            mocks[index] = mock
+        }
+        mocks.append(mock)
     }
 
     func dataTask(request: URLRequest, _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {
-        completionHandler(Data(),
-                          URLResponse(url: try! "".toUrl(),
-                                      mimeType: "",
-                                      expectedContentLength: 1,
-                                      textEncodingName: ""),
-                          nil)
-
         if let url = request.url {
-            return MNTURLSessionDataTaskMock(mock: mocks[url],
+            return MNTURLSessionDataTaskMock(mock: mocks.first(where: { url.toString() == $0.urlConvertible.toString() }),
                                              completionHandler: completionHandler)
 
         }

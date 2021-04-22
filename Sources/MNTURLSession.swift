@@ -9,7 +9,7 @@
 import Foundation
 
 class MNTURLSession: MNTMockableURLSession {
-    func setMock(_ mock: MNTMock, forUrl url: URLConvertible) throws {}
+    func setMock(_ mock: MNTMock) {}
 
     func dataTask(request: URLRequest,
                   _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {
