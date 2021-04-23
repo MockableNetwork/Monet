@@ -27,4 +27,13 @@ class URLComponentsTest: XCTestCase {
             XCTAssertEqual("host: bad host path: www.example.com  is not a valid URL.", error.localizedDescription)
         }
     }
+
+    func testToString() {
+        var components = URLComponents(string: "www.example.com")
+        components?.queryItems = [URLQueryItem(name: "test_name", value: "components")]
+
+        XCTAssertEqual(components?.toString(),
+                       "www.example.com?test_name=components")
+        XCTAssertNil(URLComponents(string: "bad url")?.toString())
+    }
 }
