@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol MNTMockableDataTask {
+public protocol MNTMockableDataTask {
     func resume()
 }

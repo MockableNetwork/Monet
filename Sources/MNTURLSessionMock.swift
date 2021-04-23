@@ -8,10 +8,10 @@
 
 import Foundation
 
-class MNTURLSessionMock: MNTMockableURLSession {
-    var mocks: [MNTMock] = []
+public class MNTURLSessionMock: NSObject, MNTMockableURLSession {
+    public var mocks: [MNTMock] = []
 
-    func setMock(_ mock: MNTMock) {
+    public func setMock(_ mock: MNTMock) {
         if mocks.contains(mock) {
             let index = mocks.firstIndex(of: mock)!
             mocks.remove(at: index)
@@ -19,7 +19,9 @@ class MNTURLSessionMock: MNTMockableURLSession {
         mocks.append(mock)
     }
 
-    func dataTask(request: URLRequest,
+    public func clearMocks() { mocks.removeAll() }
+
+    public func dataTask(request: URLRequest,
                   _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {
         let predicate: (MNTMock) -> Bool = { mock in
             request.url!.toString() == mock.urlConvertible.toString() &&

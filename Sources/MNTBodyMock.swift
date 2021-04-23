@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol MNTBodyMock {
+public protocol MNTBodyMock {
     func toData() throws -> Data
 }

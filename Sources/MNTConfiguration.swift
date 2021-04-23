@@ -8,14 +8,14 @@
 
 import Foundation
 
-class MNTConfiguration {
-    static let `default`: MNTConfiguration = .init(urlSession: MNTURLSession(),
-                                                   urlSessionMock: MNTURLSessionMock())
+public class MNTConfiguration {
+    public static let `default`: MNTConfiguration = .init(urlSession: MNTURLSession(),
+                                                          urlSessionMock: MNTURLSessionMock())
     var urlSession: MNTMockableURLSession
     var urlSessionMock: MNTMockableURLSession
     var debugKey: String
 
-    init(urlSession: MNTMockableURLSession,
+    public init(urlSession: MNTMockableURLSession,
          urlSessionMock: MNTMockableURLSession,
          debugKey: String = "DEBUG") {
         self.urlSession = urlSession

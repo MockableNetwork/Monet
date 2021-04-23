@@ -8,10 +8,11 @@
 
 import Foundation
 
-typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
+public typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
 
-protocol MNTMockableURLSession {
+public protocol MNTMockableURLSession: NSObject {
     func setMock(_ mock: MNTMock)
+    func clearMocks()
     func dataTask(request: URLRequest,
                   _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask
 }

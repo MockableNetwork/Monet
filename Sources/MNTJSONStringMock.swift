@@ -8,14 +8,14 @@
 
 import Foundation
 
-class MNTJSONStringMock: MNTBodyMock {
+public class MNTJSONStringMock: MNTBodyMock {
     private var value: String
 
-    init(_ value: String) {
+    public init(_ value: String) {
         self.value = value
     }
 
-    func toData() throws -> Data {
+    public func toData() throws -> Data {
         return try value.toData()
     }
 }

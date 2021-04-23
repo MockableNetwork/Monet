@@ -9,7 +9,7 @@
 import Foundation
 
 extension Data: MNTBodyMock {
-    func toData() throws -> Data {
+    public func toData() throws -> Data {
         return self
     }
 }

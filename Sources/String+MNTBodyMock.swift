@@ -9,10 +9,7 @@
 import Foundation
 
 extension String: MNTBodyMock {
-    func toData() throws -> Data {
-        if let data = data(using: .utf8) {
-            return data
-        }
-        throw MNTError.MockFailReason.invalidData
+    public func toData() throws -> Data {
+        data(using: .utf8)!
     }
 }

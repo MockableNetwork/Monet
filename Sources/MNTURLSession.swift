@@ -8,10 +8,12 @@
 
 import Foundation
 
-class MNTURLSession: MNTMockableURLSession {
-    func setMock(_ mock: MNTMock) {}
+public class MNTURLSession: NSObject, MNTMockableURLSession {
+    public func setMock(_ mock: MNTMock) {}
 
-    func dataTask(request: URLRequest,
+    public func clearMocks() {}
+
+    public func dataTask(request: URLRequest,
                   _ completionHandler: @escaping DataTaskResult) -> MNTMockableDataTask {
         return URLSession.shared.dataTask(with: request,
                                           completionHandler: completionHandler)

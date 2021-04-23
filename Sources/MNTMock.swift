@@ -8,15 +8,15 @@
 
 import Foundation
 
-struct MNTMock: Equatable {
-    var body: MNTBodyMock
-    var error: Error?
-    var statusCode: Int
-    var urlConvertible: URLConvertible
-    var method: HTTPMethod
-    var headers: Headers
+public struct MNTMock: Equatable {
+    public var body: MNTBodyMock
+    public var error: Error?
+    public var statusCode: Int
+    public var urlConvertible: URLConvertible
+    public var method: HTTPMethod
+    public var headers: Headers
 
-    init(body: MNTBodyMock, error: Error?, statusCode: Int, urlConvertible: URLConvertible, method: HTTPMethod, headers: Headers = [:]) {
+    public init(body: MNTBodyMock, error: Error?, statusCode: Int, urlConvertible: URLConvertible, method: HTTPMethod, headers: Headers = [:]) {
         self.body = body
         self.error = error
         self.statusCode = statusCode
@@ -25,7 +25,7 @@ struct MNTMock: Equatable {
         self.headers = headers
     }
 
-    init(body: MNTBodyMock, error: Error?, status: RequestStatus, urlConvertible: URLConvertible, method: HTTPMethod, headers: Headers = [:]) {
+    public init(body: MNTBodyMock, error: Error?, status: RequestStatus, urlConvertible: URLConvertible, method: HTTPMethod, headers: Headers = [:]) {
         self.body = body
         self.error = error
         self.statusCode = status.code
@@ -34,21 +34,21 @@ struct MNTMock: Equatable {
         self.headers = headers
     }
 
-    func httpResponse() throws -> HTTPURLResponse?{
+    public func httpResponse() throws -> HTTPURLResponse?{
         return HTTPURLResponse(url: try urlConvertible.toUrl(),
                                statusCode: statusCode,
                                httpVersion: "HTTP/1.1",
                                headerFields: headers)
     }
 
-    static func == (lhs: MNTMock, rhs: MNTMock) -> Bool {
+    public static func == (lhs: MNTMock, rhs: MNTMock) -> Bool {
         lhs.method == rhs.method &&
             lhs.urlConvertible.toString() == rhs.urlConvertible.toString()
     }
 }
 
 extension MNTMock {
-    enum RequestStatus {
+    public enum RequestStatus {
         case success
         case created
         case accepted
@@ -69,7 +69,7 @@ extension MNTMock {
         case serviceTemporaryOverloaded
         case serviceUnavailable
 
-        var code: Int {
+        public var code: Int {
             switch self {
             case .success:
                 return 200

@@ -8,17 +8,17 @@
 
 import Foundation
 
-class MNTURLSessionDataTaskMock: MNTMockableDataTask {
-    var called: Bool = false
-    var mock: MNTMock?
-    var completionHandler: DataTaskResult
+public class MNTURLSessionDataTaskMock: MNTMockableDataTask {
+    public var called: Bool = false
+    public var mock: MNTMock?
+    public var completionHandler: DataTaskResult
 
-    init(mock: MNTMock?, completionHandler: @escaping DataTaskResult) {
+    public init(mock: MNTMock?, completionHandler: @escaping DataTaskResult) {
         self.mock = mock
         self.completionHandler = completionHandler
     }
 
-    func resume() {
+    public func resume() {
         called = true
         guard let mock = mock else {
             return completionHandler(nil,
