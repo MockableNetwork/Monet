@@ -40,9 +40,14 @@ class MNTErrorTests: XCTestCase {
     }
 
     func testMockFailReasons() {
-        XCTAssertEqual(MNTError.mockFail(reason: .invalidData).localizedDescription, "Mock data is not valid.")
-        XCTAssertEqual(MNTError.mockFail(reason: .noMock).localizedDescription, "Mock has not been specified.")
-        XCTAssertEqual(MNTError.mockFail(reason: .unreadableMockFile(file: "Test.json")).localizedDescription, "Test.json is unreadable or unreachable")
+        XCTAssertEqual(MNTError.mockFail(reason: .invalidData).localizedDescription,
+                       "Mock data is not valid.")
+        XCTAssertEqual(MNTError.mockFail(reason: .noMock).localizedDescription,
+                       "Mock has not been specified.")
+        XCTAssertEqual(MNTError.mockFail(reason: .unreadableMockFile(file: "Test.json")).localizedDescription,
+                       "Test.json is unreadable.")
+        XCTAssertEqual(MNTError.mockFail(reason: .notPresentInBundle(file: "Test.json")).localizedDescription,
+                       "Test.json is not present in specified bundle.")
     }
 
     func testOtherReason() {

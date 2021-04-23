@@ -19,4 +19,12 @@ class StringTests: XCTestCase {
                            "www.bad url.com is not a valid URL.")
         }
     }
+
+    func testString() {
+        XCTAssertEqual("hello".toString(), "hello")
+    }
+
+    func testToData() {
+        XCTAssertEqual(try "hello".toData(), "hello".data(using: .utf8)!)
+    }
 }

@@ -9,5 +9,6 @@
 import Foundation
 
 public protocol URLConvertible {
+    func toString() -> String
     func toUrl() throws -> URL
 }

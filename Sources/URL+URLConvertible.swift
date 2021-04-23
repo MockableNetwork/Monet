@@ -9,6 +9,8 @@
 import Foundation
 
 extension URL: URLConvertible {
+    public func toString() -> String { absoluteString }
+
     public func toUrl() throws -> URL {
         return self
     }
