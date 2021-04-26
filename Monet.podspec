@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Monet"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.5"
   spec.summary      = "Monet is a simple Networking library for iOS that allows mockup injection."
   spec.swift_version = "5.0"
 
