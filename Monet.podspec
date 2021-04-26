@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Monet"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "Monet is a simple Networking library for iOS that allows mockup injection."
   spec.swift_version = "5.0"
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Monet is a very simple Networking library for iOS that has been created to get a mockable network layer."
 
-  spec.homepage     = "https://github.com/pacocd/Monet"
+  spec.homepage     = "https://github.com/MockableNetwork/Monet"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,11 +51,11 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Francisco Javier Chacon de Dios" => "pacochacon94@gmail.com" }
+  spec.author             = { "Francisco Javier Chacon de Dios" => "me@franciscochacon.dev" }
   spec.social_media_url   = "https://twitter.com/pacocd94"
 
   spec.platform = :ios, "12.0"
-  spec.source       = { :git => "https://github.com/pacocd/Monet.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/MockableNetwork/Monet.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
