@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Monet"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "Monet is a simple Networking library for iOS that allows mockup injection."
   spec.swift_version = "5.0"
 
@@ -54,7 +54,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Francisco Javier Chacon de Dios" => "me@franciscochacon.dev" }
   spec.social_media_url   = "https://twitter.com/pacocd94"
 
-  spec.platform = :ios, "12.0"
+  spec.platform = :ios, "9.0"
   spec.source       = { :git => "https://github.com/MockableNetwork/Monet.git", :tag => "#{spec.version}" }
 
 
