@@ -30,10 +30,17 @@ public class Monet {
 
     public func clearMocks() { urlSession.clearMocks() }
 
-    public func request(fromUrl urlConvertible: URLConvertible,
-                 method: HTTPMethod = .get,
-                 headers: Headers? = nil,
-                 handler: @escaping(Data?, URLResponse?, Error?) -> Void) {
+    public func fetch(fromRequest urlRequest: URLRequest,
+                      handler: @escaping DataTaskResult) {
+        urlSession.dataTask(request: urlRequest) { data, response, error in
+            handler(data, response, error)
+        }.resume()
+    }
+
+    public func fetch(fromURL urlConvertible: URLConvertible,
+                      method: HTTPMethod = .get,
+                      headers: Headers? = nil,
+                      handler: @escaping DataTaskResult) {
 
         do {
             let url = try urlConvertible.toUrl()

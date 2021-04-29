@@ -40,7 +40,7 @@ class MonetTests: XCTestCase {
         XCTAssert(monet.urlSession is MNTURLSession)
     }
 
-    func testRequestWithMocks() {
+    func testFetchFromRequestWithMocks() {
         let successExpectation = expectation(description: "Success")
         let monet: Monet = .shared
         let bodyMock = MNTFileMock(filename: "Mock",
@@ -53,9 +53,10 @@ class MonetTests: XCTestCase {
                            method: .get)
         monet.setMock(mock)
 
-        monet.request(fromUrl: "www.test.com",
-                      method: .get,
-                      headers: ["name": "Monet"]) { (data, response, error) in
+        var request = URLRequest(url: try! "www.test.com".toUrl())
+        request.httpMethod = "GET"
+
+        monet.fetch(fromRequest: request) { data, response, error in
             XCTAssertNotNil(data)
             XCTAssertNotNil(response)
             XCTAssertNil(error)
@@ -65,7 +66,32 @@ class MonetTests: XCTestCase {
         wait(for: [successExpectation], timeout: 5)
     }
 
-    func testRequestWithBadUrl() {
+    func testFetchFromUrlWithMocks() {
+        let successExpectation = expectation(description: "Success")
+        let monet: Monet = .shared
+        let bodyMock = MNTFileMock(filename: "Mock",
+                                   fileExtension: "json",
+                                   bundle: .init(for: type(of: self)))
+        let mock = MNTMock(body: bodyMock,
+                           error: nil,
+                           status: .success,
+                           urlConvertible: "www.test.com",
+                           method: .get)
+        monet.setMock(mock)
+
+        monet.fetch(fromURL: "www.test.com",
+                    method: .get,
+                    headers: ["name": "Monet"]) { (data, response, error) in
+            XCTAssertNotNil(data)
+            XCTAssertNotNil(response)
+            XCTAssertNil(error)
+            successExpectation.fulfill()
+        }
+
+        wait(for: [successExpectation], timeout: 5)
+    }
+
+    func testFetchFromUrlWithBadUrl() {
         let successExpectation = expectation(description: "Failure")
         let monet: Monet = .shared
         let bodyMock = MNTFileMock(filename: "Mock",
@@ -78,9 +104,9 @@ class MonetTests: XCTestCase {
                            method: .get)
         monet.setMock(mock)
 
-        monet.request(fromUrl: "www.bad url.com",
-                      method: .get,
-                      headers: ["name": "Monet"]) { (data, response, error) in
+        monet.fetch(fromURL: "www.bad url.com",
+                    method: .get,
+                    headers: ["name": "Monet"]) { (data, response, error) in
             XCTAssertNil(data)
             XCTAssertNil(response)
             XCTAssertNotNil(error)
@@ -92,13 +118,13 @@ class MonetTests: XCTestCase {
         wait(for: [successExpectation], timeout: 5)
     }
 
-    func testRequestWithNoMock() {
+    func testFetchFromUrlWithNoMock() {
         let successExpectation = expectation(description: "Failure")
         let monet: Monet = .shared
 
-        monet.request(fromUrl: "www.test.com",
-                      method: .get,
-                      headers: ["name": "Monet"]) { (data, response, error) in
+        monet.fetch(fromURL: "www.test.com",
+                    method: .get,
+                    headers: ["name": "Monet"]) { (data, response, error) in
             XCTAssertNil(data)
             XCTAssertNil(response)
             XCTAssertNotNil(error)
