@@ -32,9 +32,7 @@ public class Monet {
 
     public func fetch(fromRequest urlRequest: URLRequest,
                       handler: @escaping DataTaskResult) {
-        urlSession.dataTask(request: urlRequest) { data, response, error in
-            handler(data, response, error)
-        }.resume()
+        urlSession.dataTask(request: urlRequest, handler).resume()
     }
 
     public func fetch(fromURL urlConvertible: URLConvertible,
@@ -53,9 +51,7 @@ public class Monet {
                 }
             }
 
-            urlSession.dataTask(request: urlRequest, { (data, response, error) in
-                handler(data, response, error)
-            }).resume()
+            urlSession.dataTask(request: urlRequest, handler).resume()
         } catch {
             handler(nil, nil, error)
         }
